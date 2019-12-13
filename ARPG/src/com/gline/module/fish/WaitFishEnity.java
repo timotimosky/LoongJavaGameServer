@@ -1,9 +1,5 @@
 package com.gline.module.fish;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
-
-import com.gline.module.scene.Pos;
-
 //等待刷新的鱼实体
 public class WaitFishEnity {
 

@@ -9,8 +9,8 @@ import com.gline.NetWorkInit;
 import com.gline.controller.ControllerModel;
 import com.gline.module.person.PlayerEntity;
 import com.gline.proxy.LoginProxy;
-import com.gline.proxy.PlayerProxy;
-import com.gline.proxy.ScoketProxy;
+//import com.gline.proxy.PlayerProxy;
+//import com.gline.proxy.ScoketProxy;
 import com.gline.proxy.UtilProxy;
 
 import netBase.util.GameClient;
@@ -30,7 +30,7 @@ public class PlayerMessage extends SendManager {
 	 */
 	public static void GC_HEART_BEAT(GameClient client,long time)
 	{
-		send(client, createBuffer(30), ControllerModel.UTILMODEL, UtilProxy.GC_HEART_BEAT, time);
+		//send(client, createBuffer(30), ControllerModel.UTILMODEL, UtilProxy.GC_HEART_BEAT, time);
 		
 	}
 	
@@ -49,8 +49,8 @@ public class PlayerMessage extends SendManager {
 	 */
 	public static void GC_TEST(GameClient client,String countId, int i, long l, int b, int s, float f, double d)
 	{
-		ChannelBuffer channel = encode(createBuffer2048(), ControllerModel.PLAYERMODEL, PlayerProxy.CG_CREATE, countId, i, l, b, s, f, d);
-		send(client, channel);
+		//ChannelBuffer channel = encode(createBuffer2048(), ControllerModel.PLAYERMODEL, PlayerProxy.CG_CREATE, countId, i, l, b, s, f, d);
+	//	send(client, channel);
 	}
 	/**
 	 * 弹出进入游戏每日奖励
@@ -120,9 +120,9 @@ public class PlayerMessage extends SendManager {
 	{
 		//其实encode方式,每次都强转object,效率低,直接用write更好.
 		
-		ChannelBuffer channelBuffer = encode(createBuffer128(),
-				ControllerModel.PLAYERMODEL, PlayerProxy.GC_CREATE, FishPid,RoleId,playerName);
-		send(client, channelBuffer);
+		//ChannelBuffer channelBuffer = encode(createBuffer128(),
+		//		ControllerModel.PLAYERMODEL, PlayerProxy.GC_CREATE, FishPid,RoleId,playerName);
+		//send(client, channelBuffer);
 	}
 
 	
@@ -156,7 +156,7 @@ public class PlayerMessage extends SendManager {
 	 */
 	public static void CG_GS_KICK(GameClient client, int type)
 	{
-		send(client, createBuffer(32), ControllerModel.SOCKETMODEL, ScoketProxy.GC_GS_DOWN,(byte)type);
+		//send(client, createBuffer(32), ControllerModel.SOCKETMODEL, ScoketProxy.GC_GS_DOWN,(byte)type);
 	}
 	
 	
@@ -166,6 +166,6 @@ public class PlayerMessage extends SendManager {
 	 */
 	public static void GC_T_GAME_ALL(ConcurrentHashMap<Integer,GameClient> list, String pid)
 	{
-		sends(list, createBuffer(32), ControllerModel.PLAYERMODEL, PlayerProxy.GC_GS_DOWN,pid);
+		//sends(list, createBuffer(32), ControllerModel.PLAYERMODEL, PlayerProxy.GC_GS_DOWN,pid);
 	}
 }

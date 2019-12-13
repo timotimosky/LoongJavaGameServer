@@ -1,0 +1,838 @@
+[INFO ] 12-12 15:11:02 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 15:11:02 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 15:11:02 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 15:11:02 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 15:11:02 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 15:11:02 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 15:11:02 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:11:03 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 15:11:03 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 15:11:03 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 15:11:03 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 15:11:03 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:11:03 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 15:11:03 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 15:11:03 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 15:11:03 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 15:11:03 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 15:11:03 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 15:11:03 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 15:11:03 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 15:11:03 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 15:11:03 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 15:11:03 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[ERROR] 12-12 15:11:03 [main](thread.ThreadUncaughtExceptionHandler:20) - 异常捕捉: main 异常java.lang.Error: Unresolved compilation problem: 
+	Unreachable catch block for UnknownHostException. This exception is never thrown from the try statement body
+
+java.lang.Error: Unresolved compilation problem: 
+	Unreachable catch block for UnknownHostException. This exception is never thrown from the try statement body
+
+	at engine.mongodb.base.MongoDBUtil.init(MongoDBUtil.java:60)
+	at engine.mongodb.base.MongoDBUtil.getDB(MongoDBUtil.java:35)
+	at engine.mongodb.test.testSelect(test.java:29)
+	at com.gline.Main.main(Main.java:50)
+[INFO ] 12-12 15:53:15 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 15:53:15 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 15:53:15 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 15:53:15 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 15:53:15 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 15:53:16 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:53:16 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 15:53:16 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[3]线程组0空闲内存/总内存：[428MB/491MB] 处理器[12]
+[INFO ] 12-12 15:53:16 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 15:53:16 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 15:53:16 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 15:53:16 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 15:53:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 15:53:16 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 15:53:16 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 15:53:16 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 15:53:16 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 15:53:29 [main](com.gline.Main:67) - exception happens
+com.mongodb.MongoException$Network: can't call something
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:226)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:224)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:224)
+	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295)
+	at com.mongodb.DB.getCollectionNames(DB.java:263)
+	at engine.mongodb.test.testSelect(test.java:31)
+	at com.gline.Main.main(Main.java:50)
+Caused by: java.io.IOException: couldn't connect to [DESKTOP-110EBDM/192.168.1.161:27017] bc:java.net.ConnectException: Connection refused: connect
+	at com.mongodb.DBPort._open(DBPort.java:205)
+	at com.mongodb.DBPort.go(DBPort.java:94)
+	at com.mongodb.DBPort.go(DBPort.java:75)
+	at com.mongodb.DBPort.call(DBPort.java:65)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:215)
+	... 6 more
+[INFO ] 12-12 15:54:49 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 15:54:49 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 15:54:49 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 15:54:49 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 15:54:49 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 15:54:49 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 15:54:49 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:54:49 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 15:54:50 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 15:54:50 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 15:54:50 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 15:54:50 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:54:50 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 15:54:50 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 15:54:50 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 15:54:50 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 15:54:50 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 15:54:50 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 15:54:50 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 15:54:50 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 15:54:50 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 15:54:50 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 15:54:50 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 15:55:02 [main](com.gline.Main:67) - exception happens
+com.mongodb.MongoException$Network: can't call something
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:226)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:224)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:224)
+	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:295)
+	at com.mongodb.DB.getCollectionNames(DB.java:263)
+	at engine.mongodb.test.testSelect(test.java:31)
+	at com.gline.Main.main(Main.java:50)
+Caused by: java.io.IOException: couldn't connect to [DESKTOP-110EBDM/192.168.1.161:27017] bc:java.net.ConnectException: Connection refused: connect
+	at com.mongodb.DBPort._open(DBPort.java:205)
+	at com.mongodb.DBPort.go(DBPort.java:94)
+	at com.mongodb.DBPort.go(DBPort.java:75)
+	at com.mongodb.DBPort.call(DBPort.java:65)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:215)
+	... 6 more
+[INFO ] 12-12 15:57:15 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 15:57:15 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 15:57:15 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 15:57:15 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 15:57:15 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 15:57:15 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 15:57:15 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:57:15 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 15:57:16 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 15:57:16 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 15:57:16 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 15:57:16 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 15:57:16 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 15:57:16 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[469MB/491MB] 处理器[12]
+[INFO ] 12-12 15:57:16 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 15:57:16 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 15:57:16 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 15:57:16 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 15:57:16 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 15:57:16 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 15:57:16 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 15:57:16 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 15:57:16 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 16:13:01 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 16:13:01 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 16:13:01 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 16:13:01 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 16:13:01 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 16:13:01 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 16:13:01 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 16:13:01 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 16:13:01 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 16:13:01 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 16:13:01 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 16:13:01 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 16:13:01 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 16:13:01 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 16:13:01 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 16:13:01 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 16:13:01 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 16:13:01 [main](com.gline.Main:56) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 16:13:01 [main](com.gline.Main:58) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 16:13:02 [main](com.gline.Main:60) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 16:15:27 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 16:15:27 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 16:15:27 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 16:15:27 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 16:15:27 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 16:15:28 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 16:15:28 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 16:15:28 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 16:15:28 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 16:15:28 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 16:15:28 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 16:15:28 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 16:15:28 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 16:15:28 [main](engine.mongodb.base.MongoDBUtil:47) - 初始化数据库---Fish
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:56) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:58) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 16:15:28 [main](com.gline.Main:60) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 16:56:51 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 16:56:51 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 16:56:51 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 16:56:51 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 16:56:51 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 16:56:52 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 16:56:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 16:56:52 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 16:56:52 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 16:56:52 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 16:56:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 16:56:52 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 16:56:52 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 16:56:52 [main](engine.mongodb.base.MongoDBUtil:47) - 初始化数据库---fish1
+[INFO ] 12-12 16:56:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 16:56:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 16:56:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 16:56:52 [main](com.gline.Main:61) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 16:59:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[330MB/491MB] 处理器[12]
+[INFO ] 12-12 17:02:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[328MB/491MB] 处理器[12]
+[INFO ] 12-12 17:05:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[328MB/491MB] 处理器[12]
+[INFO ] 12-12 17:08:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:11:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:14:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:15:48 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 17:15:48 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 17:15:48 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 17:15:48 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 17:15:48 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 17:15:48 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:15:48 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 17:15:48 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 17:15:48 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 17:15:48 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 17:15:48 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 17:15:48 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 17:15:48 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 17:15:48 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 17:15:48 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 17:15:48 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 17:15:48 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 17:15:48 [main](engine.mongodb.base.MongoDBUtil:47) - 初始化数据库---fish1
+[INFO ] 12-12 17:15:49 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 17:15:49 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 17:15:49 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 17:15:49 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 17:15:49 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 17:15:49 [main](com.gline.Main:61) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 17:16:53 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 17:16:53 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 17:16:53 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 17:16:53 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 17:16:53 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 17:16:53 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:16:53 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 17:16:53 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 17:16:53 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 17:16:53 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 17:16:53 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 17:16:53 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 17:16:53 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 17:16:53 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 17:16:53 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 17:16:53 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 17:16:53 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 17:16:53 [main](engine.mongodb.base.MongoDBUtil:47) - 初始化数据库---fish1222
+[INFO ] 12-12 17:16:54 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 17:16:54 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 17:16:54 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 17:16:54 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 17:16:54 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 17:16:54 [main](com.gline.Main:61) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 17:19:53 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[331MB/491MB] 处理器[12]
+[INFO ] 12-12 17:22:04 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 17:22:04 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 17:22:04 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 17:22:04 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 17:22:04 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 17:22:04 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:22:04 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 17:22:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 17:22:04 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 17:22:04 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 17:22:04 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 17:22:04 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 17:22:04 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 17:22:04 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 17:22:04 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 17:22:04 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 17:22:04 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 17:22:04 [main](engine.mongodb.base.MongoDBUtil:47) - 初始化数据库---fish1222
+[INFO ] 12-12 17:22:05 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 17:22:05 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 17:22:05 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 17:22:05 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 17:22:05 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 17:22:05 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 17:22:05 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 17:22:05 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 17:22:05 [main](com.gline.Main:61) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 17:25:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[331MB/491MB] 处理器[12]
+[INFO ] 12-12 17:28:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[328MB/491MB] 处理器[12]
+[INFO ] 12-12 17:31:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[328MB/491MB] 处理器[12]
+[INFO ] 12-12 17:34:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:37:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:40:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:43:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:46:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:49:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:52:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:55:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:58:04 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 17:58:51 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 17:58:51 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 17:58:51 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 17:58:51 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 17:58:51 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 17:58:52 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 17:58:52 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 17:58:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 17:58:52 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 17:58:52 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 17:58:52 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 17:58:52 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 17:58:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 17:58:52 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 17:58:52 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 17:58:52 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 17:58:52 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 17:58:52 [main](engine.mongodb.base.MongoDBUtil:49) - 初始化数据库---testdjl1
+[INFO ] 12-12 17:58:52 [main](com.gline.Main:68) - exception happens
+java.lang.NullPointerException
+	at engine.mongodb.base.BaseDAOImpl.insert(BaseDAOImpl.java:15)
+	at engine.mongodb.test.testPut(test.java:24)
+	at com.gline.Main.main(Main.java:50)
+[INFO ] 12-12 18:03:58 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:03:58 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:03:58 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:03:58 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:03:58 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:03:58 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:03:58 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:03:59 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:03:59 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:03:59 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:03:59 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:03:59 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:03:59 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:03:59 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 18:03:59 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:03:59 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:03:59 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:03:59 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:03:59 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:03:59 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:03:59 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:03:59 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:03:59 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:03:59 [main](engine.mongodb.base.MongoDBUtil:49) - 初始化数据库---testdjl1
+[INFO ] 12-12 18:03:59 [main](com.gline.Main:68) - exception happens
+java.lang.NullPointerException
+	at engine.mongodb.base.BaseDAOImpl.insert(BaseDAOImpl.java:21)
+	at engine.mongodb.test.testPut(test.java:24)
+	at com.gline.Main.main(Main.java:50)
+[INFO ] 12-12 18:05:21 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:05:21 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:05:21 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:05:21 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:05:21 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:05:21 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:05:21 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:05:21 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:05:22 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:05:22 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:05:22 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:05:22 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:05:22 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:05:22 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 18:05:22 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:05:22 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:05:22 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:05:22 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:05:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:05:22 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:05:22 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:05:22 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:05:22 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:05:22 [main](engine.mongodb.base.MongoDBUtil:49) - 初始化数据库---testdjl1
+[INFO ] 12-12 18:05:22 [main](com.gline.Main:68) - exception happens
+java.lang.NullPointerException
+	at engine.mongodb.base.BaseDAOImpl.insert(BaseDAOImpl.java:21)
+	at engine.mongodb.test.testPut(test.java:24)
+	at com.gline.Main.main(Main.java:50)
+[INFO ] 12-12 18:19:43 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:19:43 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:19:43 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:19:43 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:19:43 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:19:43 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:19:44 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 18:19:44 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:19:44 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:19:44 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:19:44 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:19:44 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:19:44 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.base.MongoDBUtil:44) - 初始化数据库---Fish3
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:19:44 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 18:19:44 [main](com.gline.Main:61) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 18:22:21 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:22:21 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:22:21 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:22:21 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:22:21 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:22:22 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:22:22 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:22:22 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[3]线程组0空闲内存/总内存：[427MB/491MB] 处理器[12]
+[INFO ] 12-12 18:22:22 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:22:22 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:22:22 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:22:22 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:22:22 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:22:22 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:22:22 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:22:22 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:22:22 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.base.MongoDBUtil:44) - 初始化数据库---Fish3
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:22 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:22 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 18:22:22 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 18:22:23 [main](com.gline.Main:68) - exception happens
+org.jboss.netty.channel.ChannelException: Failed to bind to: 0.0.0.0/0.0.0.0:10045
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at netBase.netty.NettyServer.start(NettyServer.java:35)
+	at com.gline.Main.main(Main.java:60)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 12-12 18:22:44 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[331MB/491MB] 处理器[12]
+[INFO ] 12-12 18:22:54 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:22:54 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:22:54 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:22:54 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:22:54 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:22:54 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:22:54 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:22:54 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:22:54 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:22:55 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:22:55 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:22:55 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:22:55 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[3]线程组0空闲内存/总内存：[428MB/491MB] 处理器[12]
+[INFO ] 12-12 18:22:55 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:22:55 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:22:55 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:22:55 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:22:55 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:22:55 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.base.MongoDBUtil:44) - 初始化数据库---Fish3
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:22:55 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 18:22:55 [main](com.gline.Main:68) - exception happens
+org.jboss.netty.channel.ChannelException: Failed to bind to: 0.0.0.0/0.0.0.0:10045
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at netBase.netty.NettyServer.start(NettyServer.java:35)
+	at com.gline.Main.main(Main.java:60)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 12-12 18:23:06 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:23:06 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:23:06 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:23:06 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:23:06 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:23:06 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:23:07 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:23:07 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:23:07 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:23:07 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:23:07 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:23:07 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:23:07 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[3]线程组0空闲内存/总内存：[428MB/491MB] 处理器[12]
+[INFO ] 12-12 18:23:07 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:23:07 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:23:07 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:23:07 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:23:07 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:23:07 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.base.MongoDBUtil:44) - 初始化数据库---Fish3
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:23:07 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 18:23:07 [main](com.gline.Main:68) - exception happens
+org.jboss.netty.channel.ChannelException: Failed to bind to: 0.0.0.0/0.0.0.0:10045
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at netBase.netty.NettyServer.start(NettyServer.java:35)
+	at com.gline.Main.main(Main.java:60)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 12-12 18:25:44 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[329MB/491MB] 处理器[12]
+[INFO ] 12-12 18:25:51 [main](com.gline.log.LogFactory:30) - This is an driver.info,stdout,R
+[INFO ] 12-12 18:25:51 [main](com.gline.log.LogFactory:35) - This is an info.
+[WARN ] 12-12 18:25:51 [main](com.gline.log.LogFactory:36) - This is a warning.
+[ERROR] 12-12 18:25:51 [main](com.gline.log.LogFactory:37) - This is an error.
+[FATAL] 12-12 18:25:51 [main](com.gline.log.LogFactory:38) - This is a fatal error.
+[INFO ] 12-12 18:25:51 [main](com.gline.Excel.ReadExcelBoxrate:42) - xssfSheet.getLastRowNum()==33
+[INFO ] 12-12 18:25:51 [main](com.gline.Excel.ReadExcelFishType:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:25:52 [main](com.gline.Excel.ReadExcelRoleLv:34) - xssfSheet.getLastRowNum()==136
+[INFO ] 12-12 18:25:52 [main](com.gline.Excel.ReadExcelFishRefresh:35) - xssfSheet.getLastRowNum()==12
+[INFO ] 12-12 18:25:52 [main](com.gline.Excel.ReadExcelFishGruop:38) - xssfSheet.getLastRowNum()==118
+[INFO ] 12-12 18:25:52 [main](com.gline.Excel.ReadExcelFishPath:39) - xssfSheet.getLastRowNum()==98
+[INFO ] 12-12 18:25:52 [main](com.gline.Excel.ReadExcelPrize:33) - xssfSheet.getLastRowNum()==90
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:38) - --------->>>>>>>>>Init GameServer
+[INFO ] 12-12 18:25:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[2]线程组0空闲内存/总内存：[395MB/491MB] 处理器[12]
+[INFO ] 12-12 18:25:52 [main](com.gline.GameServerInit:45) - 加载线程
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:41) - --------->>>>>>>>>Init NetWork
+[INFO ] 12-12 18:25:52 [main](com.gline.NetWorkInit:32) - --------->>>>>>>>>initController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ConquestController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.FightController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ItemController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.LoginController
+[WARN ] 12-12 18:25:52 [main](com.gline.controller.LoadController:72) - 加载控制器失败,类[com.gline.controller.ALL.NpcController]缺少ClassAnn注解！！
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.PlayerController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.SceneController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ScoketController
+[INFO ] 12-12 18:25:52 [main](netBase.Manager.ModuleManager:38) - model注册成功com.gline.controller.ALL.ShopController
+[INFO ] 12-12 18:25:52 [main](com.gline.NetWorkInit:34) - --------->>>>>>>>>initResolve
+[INFO ] 12-12 18:25:52 [main](com.gline.NetWorkInit:63) - --------->>>>>>>>>init--------Resolve
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:44) - --------->>>>>>>>>HttpServer
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:49) - --------->>>>>>>>>Test Mongodb
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.base.MongoDBUtil:44) - 初始化数据库---Fish3
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:39) - kakakaka
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:40) - 男
+[INFO ] 12-12 18:25:52 [main](engine.mongodb.test:41) - 20
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:57) - --------->>>>>>>>>set timezone GMT +08
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:59) - --------->>>>>>>>>Game Start!
+[INFO ] 12-12 18:25:52 [main](com.gline.Main:61) - --------->>>>>>>>>22222222222222222222
+[INFO ] 12-12 18:28:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[331MB/491MB] 处理器[12]
+[INFO ] 12-12 18:31:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[328MB/491MB] 处理器[12]
+[INFO ] 12-12 18:34:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[328MB/491MB] 处理器[12]
+[INFO ] 12-12 18:37:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:40:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:43:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:46:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:49:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:52:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:55:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 18:58:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]
+[INFO ] 12-12 19:01:52 [pool-2-thread-1](task.HeartBeatTask:34) - 线程[29]线程组0空闲内存/总内存：[326MB/491MB] 处理器[12]

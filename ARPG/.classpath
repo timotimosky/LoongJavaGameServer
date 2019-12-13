@@ -12,8 +12,8 @@
 	<classpathentry kind="lib" path="lib/mybatis-3.2.2.jar"/>
 	<classpathentry kind="lib" path="lib/jackson-all-1.8.0.jar"/>
 	<classpathentry kind="lib" path="lib/netty-3.10.4.Final.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="lib/mongo-java-driver-2.5.jar"/>
 	<classpathentry kind="lib" path="lib/xmlbeans-2.3.0.jar"/>
-	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

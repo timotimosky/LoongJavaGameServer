@@ -42,11 +42,12 @@ public class Main {
 			NetWorkInit.getInstance().init();	
 			
 			 log.info("--------->>>>>>>>>HttpServer");
-			//HttpServer server = new HttpServer();3
+			//HttpServer server = new HttpServer();
 			//log.info("Http Server listening on 8844 ...");
 		   // server.init(8844);
 			
 			log.info("--------->>>>>>>>>Test Mongodb");
+			test.testPut();
 			test.testSelect();
 			//new NpcController().trains(1);
 			
