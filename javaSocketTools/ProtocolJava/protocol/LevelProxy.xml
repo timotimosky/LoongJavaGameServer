@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="LEVELMODEL" proxy="LevelProxy" value="2021" info="玩家等级模块" package="com.darren.game.server.network.gs.sendable.level">
+  <command cmd_name="CG_LEVEL_INFO" info="请求玩家等级信息" value="8001" direction="Client"/>
+  <command cmd_name="GC_LEVEL_INFO" info="返回玩家等级信息" value="8002" direction="Server">
+    <param name="level" type="int" size="4" remark="">玩家等级</param>
+    <param name="currExp" type="int" size="4" remark="">玩家当前经验</param>
+    <param name="levelExp" type="int" size="4" remark="">玩家升级需要经验</param>
+  </command>
+  <command cmd_name="GC_LEVEL_GET_EXP" info="玩家获取经验" value="8003" direction="Server">
+    <param name="level" type="int" size="4" remark="">玩家等级</param>
+    <param name="exp" type="int" size="4" remark="">玩家获取的经验</param>
+    <param name="currExp" type="int" size="4" remark="">玩家当前经验</param>
+    <param name="levelExp" type="int" size="4" remark="">玩家升级需要经验</param>
+    <param name="upgrade" type="byte" size="1" remark="">是否升级(0,否， 1是)</param>
+  </command>
+</module>

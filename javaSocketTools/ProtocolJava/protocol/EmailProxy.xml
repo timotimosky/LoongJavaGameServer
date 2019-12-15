@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="EMAILMODEL" proxy="EmailProxy" value="2029" info="邮件模块" package="com.darren.game.server.network.gs.receivable.email">
+  <command cmd_name="CG_EMAIL_NUM" info="请求邮件数量" value="8100" direction="Client"/>
+  <command cmd_name="GC_EMAIL_NUM" info="返回邮件数量" value="8101" direction="Server">
+    <param name="num" type="int" size="4" remark="">邮件数量</param>
+  </command>
+  <command cmd_name="CG_EMAIL_LIST" info="请求邮件列表" value="8102" direction="Client"/>
+  <command cmd_name="GC_EMAIL_LIST" info="返回邮件列表" value="8103" direction="Server">
+    <param name="emailList" type="listEmail" size="2" remark="com.darren.game.server.gameserver.module.email.entity.EmailEntity" info="邮件列表">
+      <param name="id" type="long" size="8" remark="">邮件id</param>
+      <param name="title" type="String" size="20" remark="">邮件标题</param>
+      <param name="state" type="byte" size="1" remark="">邮件状态(0:未读, 1:已读, 2:已领取)</param>
+      <param name="content" type="String" size="20" remark="">邮件内容</param>
+      <param name="date" type="long" size="8" remark="">发送日期</param>
+      <param name="from" type="String" size="20" remark="">发件人</param>
+      <param name="goodsList" type="listGoods" size="2" remark="com.darren.game.server.gameserver.module.shop.entity.AddGoods" info="邮件物品列表">
+        <param name="goodsId" type="int" size="4" remark="">物品id</param>
+        <param name="type" type="byte" size="1" remark="">物品类型(1:钻石,2:金币, 3:技能碎片, 4:技能,6:道具,7:卡牌,8:经验,9:卡魂)</param>
+        <param name="num" type="int" size="4" remark="">物品数量</param>
+        <param name="data" type="String" size="20" remark="">物品数据</param>
+      </param>
+    </param>
+  </command>
+  <command cmd_name="CG_EMAIL_DELETE" info="请求处理（领取/删除）邮件" value="8104" direction="Client">
+    <param name="id" type="long" size="8" remark="">邮件id</param>
+  </command>
+  <command cmd_name="GC_EMAIL_DELETE" info="返回处理（领取/删除）邮件" value="8105" direction="Server">
+    <param name="id" type="long" size="8" remark="">邮件id</param>
+  </command>
+  <command cmd_name="GC_EMAIL_PUSH" info="邮件推送" value="8106" direction="Server">
+    <param name="id" type="long" size="8" remark="">邮件id</param>
+    <param name="state" type="byte" size="1" remark="">邮件状态(0:未读, 1:已读, 2:已领取)</param>
+    <param name="title" type="String" size="20" remark="">邮件标题</param>
+    <param name="content" type="String" size="20" remark="">邮件内容</param>
+    <param name="date" type="long" size="8" remark="">邮件日期</param>
+    <param name="from" type="String" size="20" remark="">发送人</param>
+    <param name="goodsList" type="listGoods" size="2" remark="com.darren.game.server.gameserver.module.shop.entity.AddGoods" info="邮件物品列表">
+      <param name="goodsId" type="int" size="4" remark="">物品id</param>
+      <param name="type" type="byte" size="1" remark="">物品类型(1:钻石,2:金币, 3:技能碎片, 4:技能,6:道具,7:卡牌,8:经验,9:卡魂)</param>
+      <param name="num" type="int" size="4" remark="">物品数量</param>
+      <param name="data" type="String" size="20" remark="">物品数据</param>
+    </param>
+  </command>
+  <command cmd_name="GC_EMAIL_REFRESH" info="刷新邮件列表推送" value="8107" direction="Server"/>
+  <command cmd_name="CG_EMAIL_STATE" info="请求标记邮件状态" value="8108" direction="Client">
+    <param name="id" type="long" size="8" remark="">邮件id</param>
+    <param name="state" type="byte" size="1" remark="">标记类型(0:未读, 1:已读, 2:已领取)</param>
+  </command>
+  <command cmd_name="GC_EMAIL_STATE" info="返回标记邮件状态" value="8109" direction="Server">
+    <param name="id" type="long" size="8" remark="">邮件id</param>
+    <param name="state" type="byte" size="1" remark="">标记类型(0:未读, 1:已读, 2:已领取)</param>
+  </command>
+</module>

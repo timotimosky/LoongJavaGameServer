@@ -1,0 +1,13 @@
+#declare=		 /**\n		 *#{info}\n	     **/\n		 public const int #{name} = #{commandValue};\n
+
+<-->
+using Communication.Model;
+using System;
+using System.Collections;
+using System.Linq;
+
+	public class ControllerModel
+    {
+#{controllerDetail}
+	}
+}

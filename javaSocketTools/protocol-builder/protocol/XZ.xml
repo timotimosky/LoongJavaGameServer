@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model name="ZZ" as_class="XZ" value="123" desc="12321">
+  <command en_name="GC_" cn_name="243242" value="43243" direction="Server">
+    <param name="4324" type="int" size="4" remark=""></param>
+    <param name="432423" type="list" size="2" remark="" text="">
+      <param name="213" type="int" size="4" remark=""></param>
+      <param name="2143214" type="int" size="4" remark=""></param>
+      <param name="4324" type="int" size="4" remark=""></param>
+      <param name="4324" type="int" size="4" remark=""></param>
+    </param>
+    <param name="3424" type="int" size="4" remark=""></param>
+  </command>
+</model>

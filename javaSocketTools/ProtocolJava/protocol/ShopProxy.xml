@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="SHOPMODEL" proxy="ShopProxy" value="2018" info="商城模块" package="com.darren.game.server.network.gs.sendable.shop">
+  <command cmd_name="CG_SHOP_JOIN" info="请求进入商城界面" value="7001" direction="Client"/>
+  <command cmd_name="GC_SHOP_JOIN" info="返回进入商城界面" value="7002" direction="Server">
+    <param name="shopGoodsList" type="listShopGoods" size="2" remark="com.darren.game.server.gameserver.module.shop.entity.SendGoodsEntity" info="商品列表">
+      <param name="goodsId" type="int" size="4" remark="">商品id</param>
+      <param name="state" type="byte" size="1" remark="">商品状态(1：不可见， 2：不可点击)</param>
+    </param>
+    <param name="openVipPass" type="byte" size="1" remark="">是否开启vip特殊通道 （0否 1 开启）</param>
+  </command>
+  <command cmd_name="CG_SHOP_BUY" info="请求购买商品" value="7007" direction="Client">
+    <param name="goodsId" type="int" size="4" remark="">购买商品id</param>
+  </command>
+  <command cmd_name="GC_SHOP_BUY" info="返回购买商品" value="7008" direction="Server">
+    <param name="goodsId" type="int" size="4" remark="">购买商品id</param>
+  </command>
+  <command cmd_name="CG_SHOP_BUY_SUCCESS" info="请求支付成功" value="7009" direction="Client">
+    <param name="playerId" type="long" size="8" remark="">玩家id</param>
+    <param name="goodsId" type="int" size="4" remark="">购买商品id</param>
+  </command>
+  <command cmd_name="GC_SHOP_BUY_SUCCESS" info="返回支付成功" value="7010" direction="Server">
+    <param name="goodsId" type="int" size="4" remark="">购买商品id</param>
+  </command>
+  <command cmd_name="CG_SHOP_BUY_FAILED" info="请求支付失败" value="7011" direction="Client">
+    <param name="playerId" type="long" size="8" remark="">玩家id</param>
+    <param name="goodsId" type="int" size="4" remark="">购买商品id</param>
+  </command>
+  <command cmd_name="GC_SHOP_BUY_FAILED" info="返回支付失败" value="7012" direction="Server">
+    <param name="goodsId" type="int" size="4" remark="">购买商品id</param>
+  </command>
+  <command cmd_name="GC_SHOP_ADD_GOODS" info="添加物品推送" value="7013" direction="Server">
+    <param name="playerGoods" type="listPlayerGoods" size="2" remark="com.darren.game.server.gameserver.module.shop.entity.PushGoodsEntity" info="玩家物品添加列表">
+      <param name="goodsId" type="int" size="4" remark="">物品id</param>
+      <param name="num" type="int" size="4" remark="">数量</param>
+    </param>
+  </command>
+  <command cmd_name="GC_SHOP_RECHARGE_PSUH" info="玩家充值推送接口" value="7014" direction="Server">
+    <param name="diamond" type="int" size="4" remark="">玩家充值的钻石总数</param>
+  </command>
+</module>

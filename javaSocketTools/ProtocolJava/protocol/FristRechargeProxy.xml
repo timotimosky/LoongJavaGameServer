@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="FRISTRECHARGEMODEL" proxy="FristRechargeProxy" value="2025" info="首冲活动模块" package="com.darren.game.server.network.gs.sendable.activity.fristrecharge">
+  <command cmd_name="CG_FRIST_RECHARGE_CHECK" info="请求首冲活动检测" value="8200" direction="Client"/>
+  <command cmd_name="GC_FRIST_RECHARGE_CHECK" info="返回首冲活动检测" value="8201" direction="Server">
+    <param name="state" type="byte" size="1" remark="">返回状态 1未充值 2，未领取 3 已领取</param>
+  </command>
+  <command cmd_name="GC_FRIST_RECHARGE_PUSH" info="第一次充值推送" value="8202" direction="Server"/>
+  <command cmd_name="CG_FRIST_RECHARGE_RECEIVE" info="请求领取首冲物品" value="8203" direction="Client"/>
+  <command cmd_name="GC_FRIST_RECHARGE_RECEIVE" info="返回领取首冲物品" value="8204" direction="Server"/>
+</module>

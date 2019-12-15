@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="vbMain" alignment="TOP_CENTER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#processSelectedCommand" prefHeight="417.0" prefWidth="930.0" spacing="3.0" styleClass="item-border" stylesheets="@CommonCSS.css" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnDel" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#processDel" prefHeight="25.0" prefWidth="25.0">
+               <styleClass>
+                  <String fx:value="font-14" />
+                  <String fx:value="button-close" />
+               </styleClass></Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="540.0" spacing="3.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefWidth="80.0" styleClass="font-14" text="类型：" />
+                  <ComboBox fx:id="combCommandType" onMouseClicked="#processSelectedCommand" prefWidth="200.0" promptText="*选择命令类型">
+                     <styleClass>
+                        <String fx:value="font-14" />
+                        <String fx:value="background-comb-null" />
+                     </styleClass></ComboBox>
+                  <Label prefWidth="80.0" styleClass="font-14" text="名称：" />
+                  <TextField fx:id="txtCommandName" onMouseClicked="#processSelectedCommand" prefHeight="28.0" prefWidth="214.0" promptText="请输入命令名称">
+                     <styleClass>
+                        <String fx:value="font-14" />
+                        <String fx:value="text-field-beautiful" />
+                     </styleClass></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefWidth="80.0" styleClass="font-14" text="命令：" />
+                  <TextField fx:id="txtCommandId" onMouseClicked="#processSelectedCommand" prefWidth="200.0" promptText="请输入命令id">
+                     <styleClass>
+                        <String fx:value="font-14" />
+                        <String fx:value="text-field-beautiful" />
+                     </styleClass></TextField>
+                  <Label prefWidth="80.0" styleClass="font-14" text="描述：" />
+                  <TextField fx:id="txtCommandInfo" onMouseClicked="#processSelectedCommand" prefWidth="214.0" promptText="请输入命令介绍">
+                     <styleClass>
+                        <String fx:value="font-14" />
+                        <String fx:value="text-field-beautiful" />
+                     </styleClass></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Label prefWidth="80.0" styleClass="font-14" text="list包名：" />
+                  <TextField fx:id="txtListPackage" prefWidth="200.0" promptText="请输入list对应的实体包名" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="font-14" />
+                        <String fx:value="text-field-beautiful" />
+                     </styleClass></TextField>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets left="2.0" right="2.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefWidth="100.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TreeTableView fx:id="treetvwParams" onMouseClicked="#processSelectedCommand" prefHeight="250.0" prefWidth="200.0" showRoot="false" VBox.vgrow="ALWAYS">
+              <columns>
+                <TreeTableColumn fx:id="tcolName" prefWidth="230.0" sortable="false" style="-fx-alignment: center;" text="名称" />
+                <TreeTableColumn fx:id="tcolType" prefWidth="350.0" sortable="false" text="类型" />
+                  <TreeTableColumn fx:id="tcolSize" prefWidth="50.0" sortable="false" text="大小" />
+                  <TreeTableColumn fx:id="tcolInfo" prefWidth="270.0" sortable="false" text="描述" />
+              </columns>
+               <styleClass>
+                  <String fx:value="table-beautiful" />
+                  <String fx:value="font-12" />
+               </styleClass>
+            </TreeTableView>
+         </children>
+         <VBox.margin>
+            <Insets left="2.0" right="2.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox prefHeight="30.0" prefWidth="540.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processAddParam" onMouseClicked="#processSelectedCommand" text="新增参数">
+               <styleClass>
+                  <String fx:value="font-14" />
+                  <String fx:value="button-beautiful" />
+               </styleClass></Button>
+            <Button fx:id="btnAddListParam" mnemonicParsing="false" onAction="#processAddListParam" onMouseClicked="#processSelectedCommand" text="新增list参数">
+               <styleClass>
+                  <String fx:value="font-14" />
+                  <String fx:value="button-beautiful" />
+               </styleClass></Button>
+            <Button fx:id="btnDelParam" mnemonicParsing="false" onAction="#processDelParam" onMouseClicked="#processSelectedCommand" text="删除">
+               <styleClass>
+                  <String fx:value="font-14" />
+                  <String fx:value="button-beautiful" />
+               </styleClass></Button>
+         </children>
+         <VBox.margin>
+            <Insets left="2.0" right="2.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</fx:root>

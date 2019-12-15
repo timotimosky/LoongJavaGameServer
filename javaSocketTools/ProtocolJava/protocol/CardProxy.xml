@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="CARDMODEL" proxy="CardProxy" value="2007" info="卡牌模块" package="com.darren.game.server.network.gs.sendable.card">
+  <command cmd_name="CG_CARD_INFO" info="请求获取角色卡牌列表信息" value="6030" direction="Client"/>
+  <command cmd_name="GC_CARD_INFO" info="返回角色卡牌列表信息" value="6031" direction="Server">
+    <param name="cardList" type="listCard" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌列表">
+      <param name="cardModelId" type="int" size="4" remark="">卡牌过滤类型</param>
+      <param name="cardId" type="long" size="8" remark="">卡牌动态ID</param>
+      <param name="cardLevel" type="short" size="2" remark="">卡牌等级</param>
+      <param name="cardState" type="byte" size="1" remark="">卡牌状态（0，未使用 ；1，已布阵；2，通过发牌获得；3，通过世界地图获得）</param>
+      <param name="cardSoul" type="int" size="4" remark="">出售获得卡魂数</param>
+      <param name="newCard" type="byte" size="1" remark="">是否为新卡牌（0，为否； 1，为是）</param>
+      <param name="gemList" type="mapGem" size="2" remark="java.lang.Byte-java.lang.Byte" info="卡牌宝石">
+        <param name="position" type="byte" size="1" remark="key">宝石位置</param>
+        <param name="gemType" type="byte" size="1" remark="">宝石类型</param>
+      </param>
+    </param>
+    <param name="cardFilterList" type="listCard" size="2" remark="java.lang.Byte" info="卡牌过滤列表">
+      <param name="type" type="byte" size="1" remark="">卡牌过滤类型</param>
+    </param>
+  </command>
+  <command cmd_name="CG_EMBATTLE" info="获取主将布阵列表信息" value="6032" direction="Client">
+    <param name="generalId" type="int" size="4" remark="">主将ID</param>
+  </command>
+  <command cmd_name="GC_EMBATTLE" info="返回主将布阵列表信息" value="6033" direction="Server">
+    <param name="generalId" type="int" size="4" remark="">主将ID</param>
+    <param name="cardList" type="listCardBack" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌列表">
+      <param name="cardId" type="long" size="8" remark="">卡牌动态ID</param>
+      <param name="cardState" type="byte" size="1" remark="">卡牌状态</param>
+    </param>
+  </command>
+  <command cmd_name="CG_CARD_SELL" info="请求卡牌出售" value="6034" direction="Client">
+    <param name="cardId" type="long" size="8" remark="">出售卡牌Id</param>
+  </command>
+  <command cmd_name="GC_CARD_SELL" info="返回卡牌出售信息" value="6035" direction="Server">
+    <param name="cardId" type="long" size="8" remark="">出售卡牌Id</param>
+  </command>
+  <command cmd_name="CG_CARD_BATH_SELL" info="请求卡牌批量出售" value="6040" direction="Client">
+    <param name="cardIdList" type="listCardId" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌列表">
+      <param name="cardId" type="long" size="8" remark="">出售卡牌Id</param>
+    </param>
+  </command>
+  <command cmd_name="GC_CARD_BATH_SELL" info="返回卡牌批量出售" value="6041" direction="Server">
+    <param name="cardIdList" type="listCardId" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌id列表">
+      <param name="cardId" type="long" size="8" remark="">出售卡牌动态Id</param>
+    </param>
+  </command>
+  <command cmd_name="CG_CARD_DEAL" info="请求卡包发牌" value="6036" direction="Client">
+    <param name="type" type="byte" size="1" remark="">发牌类型（1, "金令发牌"； 2, "银令发牌"）</param>
+    <param name="free" type="byte" size="1" remark="">是否免费（1：是，0：否）</param>
+  </command>
+  <command cmd_name="GC_CARD_DEAL" info="返回卡包信息" value="6037" direction="Server">
+    <param name="cardList" type="listCard" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌列表">
+      <param name="cardModelId" type="int" size="4" remark="">卡牌原型ID</param>
+      <param name="cardId" type="long" size="8" remark="">卡牌ID</param>
+      <param name="cardLevel" type="short" size="2" remark="">卡牌等级</param>
+      <param name="cardState" type="byte" size="1" remark="">卡牌状态（0，未使用 ；1，已布阵；2，通过发牌获得；3，通过世界地图获得）</param>
+      <param name="cardSoul" type="int" size="4" remark="">卡牌灵魂数</param>
+      <param name="newCard" type="byte" size="1" remark="">是否为新卡牌（0，为否； 1，为是）</param>
+      <param name="gemList" type="mapGem" size="2" remark="java.lang.Byte-java.lang.Byte" info="卡牌宝石">
+        <param name="position" type="byte" size="1" remark="key">宝石位置</param>
+        <param name="gemType" type="byte" size="1" remark="">宝石类型</param>
+      </param>
+    </param>
+  </command>
+  <command cmd_name="CG_EMBATTLE_UPDATE" info="请求主将布阵处理" value="6038" direction="Client">
+    <param name="generalId" type="int" size="4" remark="">主将ID</param>
+    <param name="cardList" type="listCardId" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌id列表">
+      <param name="cardId" type="long" size="8" remark="">卡牌ID</param>
+    </param>
+  </command>
+  <command cmd_name="GC_EMBATTLE_UPDATE" info="返回主将布阵处理" value="6039" direction="Server">
+    <param name="generalId" type="int" size="4" remark="">主将ID</param>
+    <param name="cardList" type="listCardBack" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌返回列表">
+      <param name="cardId" type="long" size="8" remark="">卡牌ID</param>
+      <param name="cardState" type="byte" size="1" remark="">卡牌状态（0，未使用 ；1，已布阵）</param>
+    </param>
+  </command>
+  <command cmd_name="GC_ADD_CARD" info="推送增加新卡牌" value="6042" direction="Server">
+    <param name="cardList" type="listCard" size="2" remark="com.darren.game.server.gameserver.module.card.entity.CardEntity" info="卡牌列表">
+      <param name="cardModelId" type="int" size="4" remark="">卡牌原型ID</param>
+      <param name="cardId" type="long" size="8" remark="">卡牌ID</param>
+      <param name="cardLevel" type="short" size="2" remark="">卡牌等级</param>
+      <param name="cardState" type="byte" size="1" remark="">卡牌状态（0，未使用 ；1，已布阵；2，通过发牌获得；3，通过世界地图获得）</param>
+      <param name="cardSoul" type="int" size="4" remark="">卡牌灵魂数</param>
+      <param name="newCard" type="byte" size="1" remark="">是否为新卡牌（0，为否； 1，为是）</param>
+      <param name="gemList" type="mapGem" size="2" remark="java.lang.Byte-java.lang.Byte" info="卡牌宝石">
+        <param name="position" type="byte" size="1" remark="key">宝石位置</param>
+        <param name="gemType" type="byte" size="1" remark="">宝石类型</param>
+      </param>
+    </param>
+  </command>
+  <command cmd_name="CG_RECORD_NEW_CARD" info="请求选中新卡牌" value="6043" direction="Client">
+    <param name="cardId" type="long" size="8" remark="">卡牌ID</param>
+  </command>
+  <command cmd_name="GC_RECORD_NEW_CARD" info="返回选中新卡牌" value="6044" direction="Server"/>
+  <command cmd_name="CG_CARD_LEVEL" info="请求卡牌升级" value="6045" direction="Client">
+    <param name="cardId" type="long" size="8" remark="">卡牌id</param>
+  </command>
+  <command cmd_name="GC_CARD_LEVEL" info="返回卡牌升级" value="6046" direction="Server">
+    <param name="cardId" type="long" size="8" remark="">卡牌id</param>
+    <param name="cardLevel" type="short" size="2" remark="">卡牌等级</param>
+  </command>
+  <command cmd_name="CG_CARD_BACK" info="请求卡牌卡魂返还" value="6047" direction="Client">
+    <param name="cardId" type="long" size="8" remark="">卡牌id</param>
+  </command>
+  <command cmd_name="GC_CARD_BACK" info="返回卡牌卡魂返还" value="6048" direction="Server">
+    <param name="cardId" type="long" size="8" remark="">卡牌id</param>
+  </command>
+  <command cmd_name="CG_CARD_FILTER_RECORD" info="请求记录卡牌过滤设置" value="6049" direction="Client">
+    <param name="cardFilterList" type="listCardFilter" size="2" remark="java.lang.Byte" info="卡牌过滤列表">
+      <param name="type" type="byte" size="1" remark="">过滤类型</param>
+    </param>
+  </command>
+  <command cmd_name="GC_CARD_FILTER_RECORD" info="返回记录卡牌过滤设置" value="6050" direction="Server"/>
+  <command cmd_name="GC_CARD_SOUL_PUSH" info="推送卡魂数量" value="6051" direction="Server">
+    <param name="num" type="int" size="4" remark="">玩家卡魂数量</param>
+  </command>
+  <command cmd_name="CG_CARD_FREE_DEAL" info="请求卡牌免费时间" value="6052" direction="Client"/>
+  <command cmd_name="GC_CARD_FREE_DEAL" info="返回卡牌免费时间" value="6053" direction="Server">
+    <param name="goldTime" type="long" size="8" remark="">金令免费开卡剩余时间</param>
+    <param name="silverTime" type="long" size="8" remark="">银令免费开卡时间</param>
+  </command>
+</module>

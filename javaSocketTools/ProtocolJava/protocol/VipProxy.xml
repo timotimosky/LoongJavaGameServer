@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="VIPMODEL" proxy="VipProxy" value="2024" info="vip模块" package="com.darren.game.server.network.gs.sendable.vip">
+  <command cmd_name="GC_VIP_UPGRADE_PUSH" info="玩家vip升级推送" value="8100" direction="Server">
+    <param name="vipLevel" type="int" size="4" remark="">当前vip等级</param>
+  </command>
+  <command cmd_name="CG_VIP_GOODS_LIST" info="请求vip可以领取的物品列表" value="8007" direction="Client"/>
+  <command cmd_name="GC_VIP_GOODS_LIST" info="返回vip可以领取的物品列表" value="8008" direction="Server">
+    <param name="vipGoodsList" type="listVipGoods" size="2" remark="java.lang.Integer" info="vip可以领取的列表">
+      <param name="vipLevel" type="int" size="4" remark="">vip物品对应的等级</param>
+    </param>
+  </command>
+  <command cmd_name="CG_VIP_RECEIVE_GOODS" info="请求领取vip等级对应的物品" value="8009" direction="Client">
+    <param name="vipLevel" type="int" size="4" remark="">领取物品的vip等级</param>
+  </command>
+  <command cmd_name="GC_VIP_RECEIVE_GOODS" info="返回领取vip等级对应的物品" value="8010" direction="Server">
+    <param name="vipLevel" type="int" size="4" remark="">领取物品的vip等级</param>
+  </command>
+</module>

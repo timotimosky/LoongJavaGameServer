@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<models>
+  <model name="ZZ" as_class="XZ" value="123" desc="12321"/>
+  <model name="" as_class="" value="124" desc=""/>
+</models>

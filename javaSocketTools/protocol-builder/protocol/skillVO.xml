@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model name="skillModel" as_class="skillVO" value="1001" desc="技能模块">
+  <command en_name="CG_GetSkillMap" cn_name="" value="2324" direction="Client">
+    <param name="id" type="String" size="20" remark=""></param>
+    <param name="harm" type="float" size="4" remark=""></param>
+    <param name="54242" type="list" size="2" remark="" text="">
+      <param name="AA" type="int" size="4" remark=""></param>
+    </param>
+    <param name="25424" type="int" size="4" remark=""></param>
+  </command>
+  <command en_name="GC_" cn_name="" value="2325" direction="Server"/>
+</model>

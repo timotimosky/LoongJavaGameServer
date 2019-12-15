@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--各种语言的字段生成格式
+	% 表示字段名
+	@ 表示字段类型
+	ps:	enum属性枚举 (BOOLEAN, STRING, BYTES_1, BYTES_2, BYTES_4, BYTES_8, DECIMALS_SHORT, DECIMALS_LONG)
+-->
+<build name="java">
+	<head></head>
+	<field statement="private @ %;" method_set="public void %(@ %){this.% = %;}" method_get="public @ %(){return this.%;}"><!-- 字段配置 -->
+		<bytes enum="BOOLEAN" 			type="boolean"· readStr="this.% = readBoolean(ioBuf)" writeStr="writeBoolean(ioBuf, this.%)"/>
+		<bytes enum="STRING" 			type="String"  	readStr="this.% = readString(ioBuf)" writeStr="writeString(ioBuf, this.%)"/>
+		<bytes enum="BYTES_1" 			type="byte"  	readStr="this.% = readByte(ioBuf)" writeStr="writeByte(ioBuf, this.%)"/>
+		<bytes enum="BYTES_2" 			type="short"  	readStr="this.% = readShort(ioBuf)" writeStr="writeShort(ioBuf, this.%)"/>
+		<bytes enum="BYTES_4" 			type="int"	 	readStr="this.% = readInt(ioBuf)" writeStr="writeInt(ioBuf, this.%)"/>
+		<bytes enum="BYTES_8" 			type="long"	 	readStr="this.% = readLong(ioBuf)" writeStr="writeLong(ioBuf, this.%)"/>
+		<bytes enum="DECIMALS_SHORT" 	type="float"  	readStr="this.% = readFloat(ioBuf)" writeStr="writeFloat(ioBuf, this.%)"/>
+		<bytes enum="DECIMALS_LONG" 	type="double" 	readStr="this.% = readDouble(ioBuf)" writeStr="writeDouble(ioBuf, this.%)"/>
+	</field>
+</build>

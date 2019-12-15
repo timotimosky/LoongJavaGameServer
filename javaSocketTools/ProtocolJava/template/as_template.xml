@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--各种语言的字段生成格式
+	% 表示字段名
+	{type} 表示字段类型
+	ps:	enum属性枚举 (BOOLEAN, STRING, BYTES_1, BYTES_2, BYTES_4, BYTES_8, DECIMALS_SHORT, DECIMALS_LONG)
+-->
+<build name="as">
+	<field statement="private var _%:{type};" method_set="public function %(%:{type}):void{this._% = %;}" method_get="public function %():{type}{return this._%;}">	<!-- 字段配置 -->
+		<bytes enum="BOOLEAN" 			type="boolean"	readStr="this._% = readBoolean(ioBuf)" writeStr="writeBoolean(ioBuf, this._%)" method_set="public void set{type}()"/>
+		<bytes enum="STRING" 			type="String"	readStr="this._% = readString(ioBuf)" writeStr="writeString(ioBuf, this._%)"/>
+		<bytes enum="BYTES_1" 			type="byte"		readStr="this._% = readByte(ioBuf)" writeStr="writeByte(ioBuf, this._%)"/>
+		<bytes enum="BYTES_2" 			type="short"	readStr="this._% = readShort(ioBuf)" writeStr="writeShort(ioBuf, this._%)"/>
+		<bytes enum="BYTES_4" 			type="int"		readStr="this._% = readInt(ioBuf)" writeStr="writeInt(ioBuf, this._%)"/>
+		<bytes enum="BYTES_8" 			type="long"		readStr="this._% = readLong(ioBuf)" writeStr="writeLong(ioBuf, this._%)"/>
+		<bytes enum="DECIMALS_SHORT" 	type="float"	readStr="this._% = readNumber(ioBuf)" writeStr="writeNumber(ioBuf, this._%)"/>
+		<bytes enum="DECIMALS_LONG" 	type="double"	readStr="this._% = readNumber(ioBuf)" writeStr="writeNumber(ioBuf, this._%)"/>
+	</field>
+	
+</build>

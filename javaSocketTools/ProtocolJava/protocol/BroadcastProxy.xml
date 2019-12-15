@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="BROADCASTMODEL" proxy="BroadcastProxy" value="2012" info="播报模块" package="com.darren.game.server.network.gs.sendable.broadcast">
+  <command cmd_name="CG_BROADCAST_LOCK" info="请求播报锁定" value="6556" direction="Client">
+    <param name="bcGuid" type="int" size="4" remark="">播报主键ID</param>
+  </command>
+  <command cmd_name="GC_BROADCAST_LOCK" info="返回播报锁定" value="6557" direction="Server">
+    <param name="bcGuid" type="int" size="4" remark="">播报主键ID</param>
+  </command>
+  <command cmd_name="CG_BROADCAST_LIST" info="请求播报锁定列表" value="6558" direction="Client"/>
+  <command cmd_name="GC_BROADCAST_LIST" info="返回播报锁定列表" value="6559" direction="Server">
+    <param name="broadcastList" type="listBroadcast" size="2" remark="com.darren.game.server.gameserver.module.chat.entity.ChatBroadcastEntity" info="播报列表">
+      <param name="bcGuid" type="int" size="4" remark="">播报主键ID</param>
+      <param name="rankModelId" type="int" size="4" remark="">军衔Model ID</param>
+      <param name="icon" type="int" size="4" remark="">头像</param>
+      <param name="iconUrl" type="String" size="20" remark="">上传头像路径</param>
+      <param name="playerId" type="long" size="8" remark="">角色ID</param>
+      <param name="playerName" type="string" size="40" remark="">角色名称</param>
+      <param name="country" type="byte" size="1" remark="">国籍</param>
+      <param name="generalModelId" type="int" size="4" remark="">出战主将原型ID</param>
+      <param name="broadcastContent" type="string" size="70" remark="">播报内容</param>
+      <param name="createTime" type="long" size="8" remark="">创建时间</param>
+      <param name="borderType" type="short" size="2" remark="">聊天边框类型（0，普通， 1，青龙； 2，银龙，3金龙）</param>
+    </param>
+  </command>
+  <command cmd_name="CG_BROADCAST_DISPOSE_LOCK" info="请求锁定播报评价" value="6560" direction="Client">
+    <param name="bcGuid" type="int" size="4" remark="">播报主键ID</param>
+    <param name="bcType" type="byte" size="1" remark="">评价类型</param>
+  </command>
+  <command cmd_name="GC_BROADCAST_DISPOSE_LOCK" info="返回锁定播报评价" value="6561" direction="Server">
+    <param name="bcGuid" type="int" size="4" remark="">播报主键ID</param>
+    <param name="diamond" type="int" size="4" remark="">钻石数量</param>
+  </command>
+  <command cmd_name="CG_BROADCAST_LOCK_COUNT" info="请求锁定播报数量" value="6562" direction="Client"/>
+  <command cmd_name="GC_BROADCAST_LOCK_COUNT" info="返回锁定播报数量" value="6563" direction="Server">
+    <param name="bcNum" type="int" size="4" remark="">锁定播报数量</param>
+  </command>
+</module>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="RANKLISTMODEL" proxy="RankListProxy" value="2017" info="排行榜模块" package="com.darren.game.server.network.gs.sendable.ranklist">
+  <command cmd_name="CG_RANKLIST_LIST" info="请求排行榜数据" value="6901" direction="Client">
+    <param name="type" type="byte" size="1" remark="">请求的排行榜大类型</param>
+    <param name="category" type="short" size="2" remark="">请求的排行榜小类型（101,"军衔积分"，102,"成就点数"， 103,"开箱次数"，104,"魅力指数"，105,"在线时间"，106,"外快排行"，107,"话唠排行"）</param>
+  </command>
+  <command cmd_name="GC_RANKLIST_LIST" info="返回排行榜数据" value="6902" direction="Server">
+    <param name="type" type="byte" size="1" remark="">请求的排行榜类型</param>
+    <param name="category" type="short" size="2" remark="com.darren.game.server.gameserver.module.ranklist.entity.RanklistEntity">请求的排行榜小类型（101,"军衔积分"，102,"成就点数"， 103,"开箱次数"，104,"魅力指数"，105,"在线时间"，106,"外快排行"，107,"话唠排行"）</param>
+    <param name="currRanking" type="int" size="4" remark="">当前排名</param>
+    <param name="updateTime" type="long" size="8" remark="">下次更新时间（毫秒）</param>
+    <param name="ranklistList" type="listRanklist" size="2" remark="com.darren.game.server.gameserver.module.ranklist.entity.RanklistEntity" info="排行榜列表">
+      <param name="ranking" type="short" size="2" remark="">玩家排名</param>
+      <param name="upOrDown" type="byte" size="1" remark="">是否上升 2上升 1不变 0下降</param>
+      <param name="country" type="byte" size="1" remark="">国家</param>
+      <param name="rankIcon" type="int" size="4" remark="">军衔图标</param>
+      <param name="playerName" type="String" size="20" remark="">姓名</param>
+      <param name="score" type="int" size="4" remark="">排行分数</param>
+      <param name="playerId" type="long" size="8" remark="">玩家Id</param>
+    </param>
+  </command>
+  <command cmd_name="CG_RANKLIST_PRIZE_COUNT" info="请求排行榜奖励物品数量" value="6903" direction="Client"/>
+  <command cmd_name="GC_RANKLIST_PRIZE_COUNT" info="返回排行榜奖励物品数量" value="6904" direction="Server">
+    <param name="prizeNum" type="int" size="4" remark="">排行榜奖励物品数量</param>
+    <param name="fristRequest" type="byte" size="1" remark="">是否为第一次请求 （0，否； 1，是）</param>
+  </command>
+  <command cmd_name="CG_RANKLIST_PRIZE_LIST" info="请求排行榜奖励物品列表" value="6905" direction="Client"/>
+  <command cmd_name="GC_RANKLIST_PRIZE_LIST" info="返回排行榜奖励物品列表" value="6906" direction="Server">
+    <param name="ranklistPrizeList" type="listRanklistPrize" size="2" remark="java.lang.Integer" info="奖励物品列表">
+      <param name="ranklistPrizeId" type="int" size="4" remark="">排行榜奖励id</param>
+    </param>
+    <param name="info" type="String" size="20" remark="">奖励信息</param>
+  </command>
+  <command cmd_name="CG_RANKLIST_RECEIVE_PRIZE" info="请求领取奖品" value="6907" direction="Client">
+    <param name="ranklistPrizeId" type="int" size="4" remark="">排行榜奖励id</param>
+  </command>
+  <command cmd_name="GC_RANKLIST_RECEIVE_PRIZE" info="返回领取奖品" value="6908" direction="Server">
+    <param name="ranklistPrizeId" type="int" size="4" remark="">排行榜奖励id</param>
+  </command>
+</module>

@@ -1,0 +1,8 @@
+[INFO ] 12-14 13:55:52 [main](com.gline.Main:68) - exception happens
+java.io.FileNotFoundException: E:\github\JavaGameServer\properties\log4j.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.gline.log.LogFactory.init(LogFactory.java:25)
+	at com.gline.Main.main(Main.java:28)

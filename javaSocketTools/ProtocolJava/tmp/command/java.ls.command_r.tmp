@@ -1,0 +1,65 @@
+#importPackage=import #{package};\n
+#mapType=	Map<#{entity1}, #{entity2}> #{param}
+#arrayType=	{entity1}[] #{param}
+#listType= List<#{entity}> #{param} 
+#declareParams=    /* #{info} */\n    private #{type} #{param};\n
+#rowData=			/*#{info}*/\n			#{classJavaName}.set#{paramName}(read#{type}(buffer));
+#list类型的
+#baseTypeListData=	final int #{paramName}Length = readShort();\n		this.#{paramName} = new ArrayList<>(#{paramName}Length);\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			this.#{paramName}.add(#{readDetail});\n	    }\n 		
+#innerBaseTypeListData=			final int #{paramName}Length = readShort();\n			final List<#{type}> #{paramName} = new ArrayList<>(#{paramName}Length);\n			for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n				#{paramName}.add(#{readDetail});\n    		}\n			#{parentName}.set#{UpperParamName}(#{paramName});\n 		
+#baseTypeData=read#{type}()
+#listData=		final int #{paramName}Length = readShort();\n		this.#{paramName} = new ArrayList<>(#{paramName}Length);\n		#{className} #{classJavaName};\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			#{classJavaName} = new #{className}();\n#{readDetail}\n			this.#{paramName}.add(#{classJavaName});\n		}\n
+#innerListData=			final int #{paramName}Length = readShort();\n			final List<#{type}> #{paramName} = new ArrayList<>(#{paramName}Length);\n			#{className} #{classJavaName};\n			for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n				#{classJavaName} = new #{className}();\n#{readDetail}\n			#{paramName}.add(#{classJavaName});\n			}\n			#{parentName}.set#{UpperParamName}(#{paramName});\n
+#baseData=			/*#{info}*/\n			#{parentName}.set#{paramName}(read#{type}());\n
+#--map类型
+#baseTypeMapData=	final int #{paramName}Length = readShort();\n		this.#{paramName} = new HashMap<>(#{paramName}Length);\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			this.#{paramName}.put(#{readDetail});\n	    }\n 		
+#innerBaseTypeMapData=			final int #{paramName}Length = readShort();\n			final Map<#{entityName1}, #{entityName2}> #{paramName} = new HashMap<>(#{paramName}Length);\n			for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n				#{paramName}.put(#{readDetail});\n    		}\n			#{parentName}.set#{UpperParamName}(#{paramName});\n 		
+#baseTypeRowMapData=			/*#{info}*/\n			#{classJavaName} = read#{type}()\n
+#mapData=		final int #{paramName}Length = readShort();\n		this.#{paramName} = new HashMap<>(#{paramName}Length);\n		#{className1} #{entityName1};\n		#{className2} #{entityName2};\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			#{entityName1} = #{classJavaName1};\n			#{entityName2} = #{classJavaName2};\n#{readDetail}\n			this.#{paramName}.put(#{entityName1}, #{entityName2});\n		}\n
+#innerMapData=			final int #{paramName}Length = readShort();\n			final Map<#{className1}, #{className2}> #{paramName} = new HashMap<>(#{paramName}Length);\n		#{className1} #{entityName1};\n		#{className2} #{entityName2};\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			#{entityName1} = #{classJavaName1};\n			#{entityName2} = #{classJavaName2};\n#{readDetail}\n			#{paramName}.put(#{entityName1}, #{entityName2});\n			}\n			#{parentName}.set#{UpperParamName}(#{paramName});\n
+#baseRowMapData=			/*#{info}*/\n			#{parentName}.set#{paramName}(read#{type}());\n
+#--数组类型
+#baseTypeArrayData=	final int #{paramName}Length = readShort();\n		this.#{paramName} = new #{entityName}[#{paramName}Length];\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			this.#{paramName}[#{loopName}] = #{readDetail};\n	    }\n 		
+#innerBaseTypeArrayData=			final int #{paramName}Length = readShort();\n			final #{className}[] #{paramName}s = new #{entityName}[(#{paramName}Length)];\n			for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n				#{paramName}s[#{loopName}] = #{readDetail});\n    		}\n			#{parentName}.set#{UpperParamName}(#{paramName});\n 		
+#baseTypeRowArrayData=read#{type}()
+#arrayData=		final int #{paramName}Length = readShort();\n		this.#{paramName} = new #{entityName}[#{paramName}Length];\n		#{className} #{classJavaName};\n		for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n			#{classJavaName} = new #{className}();\n#{readDetail}\n			this.#{paramName}[#{loopName}] = #{classJavaName};\n		}\n
+#innerArrayData=			final int #{paramName}Length = readShort();\n			final #{className} [] #{paramName}s = new #{className}[#{paramName}Length];\n			#{className} #{classJavaName};\n			for (int #{loopName} = 0; #{loopName} < #{paramName}Length; #{loopName}++){\n				#{classJavaName} = new #{className}();\n#{readDetail}\n			#{paramName}s[#{loopName}] = #{classJavaName};\n			}\n			#{parentName}.set#{UpperParamName}(#{paramName});\n
+#baseRowArrayData=			/*#{info}*/\n			#{parentName}.set#{paramName}(read#{type}());\n
+<-->
+package #{packageName};
+
+import com.darren.game.server.gameserver.module.player.entity.PlayerEntity;
+import com.wing.gameserver.core.network.gs.GameClient.State;
+import com.wing.gameserver.core.network.gs.GsClientPacket;
+#{packages}
+
+/**
+ * #{info}
+ * @cerateDate #{date}
+ * @author Tool General
+ */
+public class #{className} extends GsClientPacket
+{
+#{declareParams}
+		
+	public #{className}(int opcode, State state, State... states) 
+	{
+		super(opcode, state, states);
+	}
+	
+	@Override
+	protected void readImpl()
+	{
+#{readParams}
+	}
+	
+	
+	@Override
+	protected void runImpl() 
+	{
+		PlayerEntity player = getConnection().getAttachment();
+	
+	
+		player.sendPacket(null);
+	}
+}

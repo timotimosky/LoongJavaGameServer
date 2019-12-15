@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module module_name="ITEMMODEL" proxy="ItemProxy" value="2023" info="道具模块" package="com.darren.game.server.network.gs.sendable.item">
+  <command cmd_name="CG_CONTAINER" info="请求背包数据" value="1001" direction="Client"/>
+  <command cmd_name="GC_CONTAINER" info="背包信息" value="1002" direction="Server">
+    <param name="backpackList" type="listBackpack" size="2" remark="com.darren.game.server.gameserver.module.item.entity.ItemEntity" info="背包道具列表">
+      <param name="pos" type="int" size="4" remark="">道具位置</param>
+      <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+      <param name="itemModelId" type="int" size="4" remark="">道具原形ID</param>
+      <param name="numb" type="int" size="4" remark="">数量</param>
+      <param name="quality" type="byte" size="1" remark="">道具品质</param>
+      <param name="overTime" type="long" size="8" remark="">道具结束时间</param>
+    </param>
+  </command>
+  <command cmd_name="GC_UPDATE_ITEM_NUMB" info="更新道具数量推送" value="1003" direction="Server">
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+    <param name="numb" type="int" size="4" remark="">最终数量</param>
+  </command>
+  <command cmd_name="GC_ADD_ITEM" info="新增道具推送" value="1004" direction="Server">
+    <param name="pos" type="int" size="4" remark="">道具位置</param>
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+    <param name="itemModelId" type="int" size="4" remark="">道具原形ID</param>
+    <param name="numb" type="int" size="4" remark="">数量</param>
+    <param name="quality" type="byte" size="1" remark="">道具品质</param>
+    <param name="overTime" type="long" size="8" remark="">道具结束时间</param>
+  </command>
+  <command cmd_name="GC_REMOVE_ITEM" info="删除道具推送" value="1005" direction="Server">
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+  </command>
+  <command cmd_name="CG_SORT" info="整理背包" value="1006" direction="Client"/>
+  <command cmd_name="GC_SORT" info="整理背包返回" value="1007" direction="Server"/>
+  <command cmd_name="CG_SELL" info="出售道具请求" value="1008" direction="Client">
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+  </command>
+  <command cmd_name="GC_SELL" info="出售道具返回" value="1009" direction="Server">
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+  </command>
+  <command cmd_name="CG_USE" info="道具使用" value="1010" direction="Client">
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+    <param name="number" type="int" size="4" remark="">使用数量</param>
+  </command>
+  <command cmd_name="GC_USE" info="道具使用返回" value="1011" direction="Server">
+    <param name="itemId" type="int" size="4" remark="">道具动态ID</param>
+    <param name="number" type="int" size="4" remark="">使用数量</param>
+  </command>
+</module>
