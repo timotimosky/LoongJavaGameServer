@@ -23,7 +23,7 @@ public class ModuleManager {
 	private static Map<Integer,  Class<?> > modelMap = new HashMap<Integer,   Class<?>>();
 	
 	/**
-	 * ע�������
+	 *
 	 */
 	public void register(int type, Class<?> clazz)
 	{	
@@ -39,7 +39,7 @@ public class ModuleManager {
 	}
 	
 	/**
-	 * ͨ������ ��ȡ��Ӧģ����
+	 *
 	 */
 	public Class<?> get(int type)
 	{
@@ -55,7 +55,7 @@ public class ModuleManager {
 	
 
 	/**
-	 * �ر�ϵͳ
+	 *
 	 */
 	public void shutdown() {
 		modelMap.clear();

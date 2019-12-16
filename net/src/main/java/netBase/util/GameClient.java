@@ -27,7 +27,7 @@ public class GameClient {
 	}
 	
 	/**
-	 * ��ȡ������ҵ�����
+	 *
 	 */
 	public Channel getChannel()
 	{

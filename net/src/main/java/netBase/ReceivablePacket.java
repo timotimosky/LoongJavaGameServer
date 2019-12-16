@@ -6,7 +6,7 @@ import org.jboss.netty.buffer.ChannelBuffer;
 
 
 /**
- * ���հ�
+ *
  * @author djl
  */
 public class ReceivablePacket extends AbstractPacket  implements Serializable  , Cloneable
@@ -20,7 +20,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
     }
 	
 	/**
-	 * ���캯��
+	 *
 	 */
 	public ReceivablePacket(int module, int opcode, ChannelBuffer buff )
 	{
@@ -30,7 +30,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	public ReceivablePacket(){}
 
 	/**
-	 * ������Ϣ
+	 *
 	 */
 	protected final void send(Object object)
 	{
@@ -39,7 +39,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 
 	
 	/**
-	 * ���������л�ȡһ��byte(����1)
+	 * byte
 	 * @return Integer
 	 */
 	protected final int readB()
@@ -48,7 +48,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ���������л�ȡһ��short(����2)
+	 * short
 	 * @return Integer
 	 */
 	protected final int readS()
@@ -57,7 +57,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ���������л�ȡһ��Integer(����4)
+	 * Integer
 	 * @return Integer
 	 */
 	protected final int readI()
@@ -66,7 +66,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ���������л�ȡһ��Long(����8)
+	 * Long
 	 * @return Long
 	 */
 	protected final long readL()
@@ -75,7 +75,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ���������л�ȡһ��Float(����4)
+	 * Float
 	 * @return Float
 	 */
 	protected final float readF()
@@ -85,7 +85,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	
 	
 	/**
-	 * ���������л�ȡһ��Double(����8)
+	 * Double
 	 * @return Double
 	 */
 	protected final double readD()
@@ -94,7 +94,6 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ���������л�ȡһ���ַ���(����λ��)
 	 * @return String
 	 */
 	protected final String readStr()
@@ -108,7 +107,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ��ʣ����������е�ֱ�Ӷ�ȡ��������byteArray��
+	 * byteArray
 	 * @return
 	 */
 	protected final byte[] readBs()
@@ -121,7 +120,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ��ȡָ�����ȵ�byteArray���ֽ���
+	 * byteArray
 	 */
 	protected final byte[] readBs(int length)
 	{
@@ -133,7 +132,6 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	}
 	
 	/**
-	 * ���������л�ȡһ������(����λ��)
 	 * @return Object
 	 */
 	protected final Object readObj()

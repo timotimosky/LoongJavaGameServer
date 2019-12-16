@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaGameServer" />
         <module name="ARPG" />
         <module name="net" />
         <module name="orm" />
+        <module name="DGame" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ARPG" target="1.5" />
+      <module name="DGame" target="1.5" />
       <module name="JavaGameServer" target="1.5" />
       <module name="net" target="1.5" />
       <module name="orm" target="1.5" />

@@ -23,7 +23,7 @@ public abstract class AbstractPacket
 	
 	
 	/**
-	 * ���캯��
+	 *
 	 */
 	public AbstractPacket(int module, int opcode, ChannelBuffer buff )
 	{

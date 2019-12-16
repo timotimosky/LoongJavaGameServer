@@ -7,8 +7,8 @@ import netBase.AloneNetMap;
 import netBase.ReceivablePacket;
 
 /**
- * ��ҺͰ���е�ӳ�� 
- *<Integer,NetLink> --> key(���Id),value(�����)
+ *
+ *<Integer,NetLink> --> key(Id),value()
  */
 public class NetMap extends ConcurrentHashMap<GameClient,NetLink>
 {
