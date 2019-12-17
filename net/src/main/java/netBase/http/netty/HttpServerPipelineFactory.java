@@ -1,3 +1,4 @@
+/*
 package netBase.http.netty;
 
 import org.jboss.netty.channel.ChannelPipeline;
@@ -37,11 +38,13 @@ public class HttpServerPipelineFactory implements ChannelPipelineFactory  {
 		//
 
 		        //以下是HTTPS的设置
-		       /* SSLEngine engine = HttpSslContextFactory.getServerContext().createSSLEngine();
+		       */
+/* SSLEngine engine = HttpSslContextFactory.getServerContext().createSSLEngine();
 		        engine.setUseClientMode(false);    //非客户端模式
-		        pipeline.addLast("ssl", new SslHandler(engine));*/
+		        pipeline.addLast("ssl", new SslHandler(engine));*//*
+
 
 		        return pipeline;
 		    }
 }
-}
+}*/

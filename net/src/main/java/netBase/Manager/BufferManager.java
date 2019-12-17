@@ -3,7 +3,6 @@ package netBase.Manager;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
 
 /**
  * BUFF
@@ -12,7 +11,7 @@ import org.apache.log4j.Logger;
  */
 public class BufferManager {
 	
-	public static Logger log = Logger.getLogger(BufferManager.class);
+	//public static Logger log = Logger.getLogger(BufferManager.class);
 	private  BufferManager(){}
 	private final static BufferManager init = new BufferManager();
 	public static BufferManager getInstance()
@@ -28,13 +27,13 @@ public class BufferManager {
 	{
 		if(receiveMap.containsKey(list))
 		{
-			log.info("BufferManager registerReceivalbe 已经存在，无法注册"+list);
+			//log.info("BufferManager registerReceivalbe 已经存在，无法注册"+list);
 			return ;
 		}
 		
 		receiveMap.put(list, clazz);
 		
-		log.info("BufferManager 注册接收消息list"+list);
+		//log.info("BufferManager 注册接收消息list"+list);
 	}
 	
 
@@ -42,13 +41,13 @@ public class BufferManager {
 	{
 		if(sendMap.containsKey(list))
 		{
-			log.info("已经存在，无法注册发送消息list"+list);
+		//	log.info("已经存在，无法注册发送消息list"+list);
 			return ;
 		}
 		
 		sendMap.put(list, clazz);
 		
-		log.info("BufferManager 注册发送消息list"+list);
+		//log.info("BufferManager 注册发送消息list"+list);
 	}
 	
 

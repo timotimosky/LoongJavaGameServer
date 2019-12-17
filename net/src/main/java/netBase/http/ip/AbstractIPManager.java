@@ -1,3 +1,4 @@
+/*
 package netBase.http.ip;
 
 import java.util.Collections;
@@ -8,18 +9,22 @@ import org.apache.log4j.Logger;
 
 
 
+*/
 /**
  * IP管理类
  * @date 2013-3-26
  * @create djl
- */
+ *//*
+
 public abstract class AbstractIPManager<K,V>
 {
 	protected Logger log = Logger.getLogger(getClass());
 	
-	/**
+	*/
+/**
 	 * IPMAP
-	 */
+	 *//*
+
 	protected Map<K, V> map;
 	
 	public AbstractIPManager()
@@ -28,31 +33,39 @@ public abstract class AbstractIPManager<K,V>
 	}
 	
 	
-	/**
+	*/
+/**
 	 * 增加一个Ip信息
 	 * @param ip
 	 * @param value
-	 */
+	 *//*
+
 	public abstract void register(K k, V v);
 	
 	
 	
-	/**
+	*/
+/**
 	 * 注销一个IP信息
-	 */
+	 *//*
+
 	public abstract void unregister(K k);
 	
 	
-	/**
+	*/
+/**
 	 * 获得一个IP信息
-	 */
+	 *//*
+
 	public abstract V get(K k);
 	
 	
 	
-	/**
+	*/
+/**
 	 * 关闭
-	 */
+	 *//*
+
 	public void shutDown()
 	{
 		map.clear();
@@ -60,24 +73,28 @@ public abstract class AbstractIPManager<K,V>
 
 	
 	
-	/**
+	*/
+/**
 	 * 将string类型的IP4转换成long类型的
 	 * @param ips			ip地址
 	 * @return			返回long类型的adress
 	 * @create 2013-3-26 djl
-	 */
+	 *//*
+
 	public static long toLong(String ips)
 	{
 		return toLong(toByteArray(ips));
 	}
 	
 	
-	/**
+	*/
+/**
 	 * 将IP4形式的Byte[]转换成long型IP4
 	 * 
 	 * @param bytes Ip4形式的Byte数组
 	 * @return 返回long表示的IP4地址
-	 */
+	 *//*
+
 	protected static long toLong(byte[] bytes)
 	{
 		long result = 0;
@@ -88,12 +105,14 @@ public abstract class AbstractIPManager<K,V>
 		return result & 0xFFFFFFFFL;
 	}
 
-	/**
+	*/
+/**
 	 * 将long型的IP4地址转换成数组
 	 * 
 	 * @param ip地址
 	 * @return 数组
-	 */
+	 *//*
+
 	protected static byte[] toBytes(long val)
 	{
 		byte[] result = new byte[4];
@@ -104,13 +123,15 @@ public abstract class AbstractIPManager<K,V>
 		return result;
 	}
 
-	/**
+	*/
+/**
 	 * 将IP4形式的地址转换成byte[]
 	 * 
 	 * @param 地址
 	 * @return 返回数组
 	 * @create 2013-3-26  djl
-	 */
+	 *//*
+
 	protected static byte[] toByteArray(String address)
 	{
 		byte[] result = new byte[4];
@@ -124,3 +145,4 @@ public abstract class AbstractIPManager<K,V>
 	}
 	
 }
+*/

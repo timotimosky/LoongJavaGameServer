@@ -1,23 +1,12 @@
 package netBase.netty;
 
-
-import org.apache.log4j.Logger;
-import org.jboss.netty.channel.Channel;
-import org.jboss.netty.channel.ChannelHandlerContext;
-import org.jboss.netty.channel.ChannelStateEvent;
-import org.jboss.netty.channel.ExceptionEvent;
-import org.jboss.netty.channel.MessageEvent;
-import org.jboss.netty.channel.SimpleChannelHandler;
-
-import com.gline.module.person.PlayerLogic;
-
 import netBase.AloneNetMap;
 import netBase.ReceivablePacket;
 import netBase.World;
 import netBase.util.GameClient;
 
 /**
- * 
+ *  分发库
  * @author timosky
  * @date 2013-1-8
  */  

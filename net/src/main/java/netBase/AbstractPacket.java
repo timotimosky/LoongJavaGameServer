@@ -1,7 +1,6 @@
 package netBase;
 
-import org.jboss.netty.buffer.ChannelBuffer;
-
+import io.netty.buffer.ByteBuf;
 import netBase.util.GameClient;
 
 /**
@@ -13,19 +12,19 @@ import netBase.util.GameClient;
  */
 public abstract class AbstractPacket
 {
-	protected int opcode;//����
+	protected int opcode;//
 	
-	private ChannelBuffer buffer;//������
+	private ByteBuf buffer;//
 		
-	private int module;//ģ��	
+	private int module;//
 	
-	private GameClient client;// ����
+	private GameClient client;//
 	
 	
 	/**
 	 *
 	 */
-	public AbstractPacket(int module, int opcode, ChannelBuffer buff )
+	public AbstractPacket(int module, int opcode, ByteBuf buff )
 	{
 		this.module = module;
 		this.opcode = opcode;
@@ -78,12 +77,12 @@ public abstract class AbstractPacket
 	}
 
 
-	public  ChannelBuffer getBuffer()
+	public  ByteBuf getBuffer()
 	{
 		return buffer;
 	}
 
-	public final void setBuffer(ChannelBuffer buff)
+	public final void setBuffer(ByteBuf buff)
 	{
 		this.buffer = buff;
 	}

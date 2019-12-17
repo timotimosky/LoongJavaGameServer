@@ -1,3 +1,4 @@
+/*
 package netBase.http.netty;
 
 import java.net.InetSocketAddress;
@@ -24,7 +25,9 @@ public class HttpServer {
 			ChannelFactory HTTPCHANNEL_FACTORY = new NioServerSocketChannelFactory(Executors.newCachedThreadPool(),
 					Executors.newCachedThreadPool());
 		  
-			/**HTTP方式(同TCP)*/
+			*/
+/**HTTP方式(同TCP)*//*
+
 		  	ChannelFactory nowFa = new NioServerSocketChannelFactory(ThreadNetWorkPoolManager.getInstance(), 1, 
 				  ThreadNetWorkPoolManager.getInstance(), 1);
 				  
@@ -42,3 +45,4 @@ public class HttpServer {
 	}
 
 }
+*/

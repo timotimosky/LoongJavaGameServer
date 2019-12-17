@@ -1,3 +1,4 @@
+/*
 package netBase.http.netty;
 
 import static org.jboss.netty.handler.codec.http.HttpHeaders.getHost;
@@ -52,11 +53,15 @@ public class HttpSnoopServerHandler extends SimpleChannelUpstreamHandler {
 	
     private HttpRequest request;
      
-    /*由于netty本身的性能需求，每次传输的字节数最大为1024个字节，所以如果文件内容小于1024个字节， 
+    */
+/*由于netty本身的性能需求，每次传输的字节数最大为1024个字节，所以如果文件内容小于1024个字节，
     	只需一次请求就可以上传文件成功；如果文件内容大于1024个字节，需多次分片上传，用到httpchunk，分片处理机制（netty本身自带）。 
-    	一次处理不玩，分多次上传。 */
+    	一次处理不玩，分多次上传。 *//*
+
     private boolean readingChunks;
-    /** Buffer that stores the response content */
+    */
+/** Buffer that stores the response content *//*
+
     private final StringBuilder buf = new StringBuilder();
 
     @Override
@@ -68,12 +73,14 @@ public class HttpSnoopServerHandler extends SimpleChannelUpstreamHandler {
             
             log.info("uri=="+uri);
             
-            /**
+            */
+/**
              * 100 Continue
              * 是这样的一种情况：HTTP客户端程序有一个实体的主体部分要发送给服务器，但希望在发送之前查看下服务器是否会
              * 接受这个实体，所以在发送实体之前先发送了一个携带100
              * Continue的Expect请求首部的请求。服务器在收到这样的请求后，应该用 100 Continue或一条错误码来进行响应。
-             */
+             *//*
+
             if (is100ContinueExpected(request)) {
                 send100Continue(e);
             }
@@ -252,3 +259,4 @@ public class HttpSnoopServerHandler extends SimpleChannelUpstreamHandler {
     }
 }
 
+*/

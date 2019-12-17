@@ -2,11 +2,7 @@ package netBase.Manager;
 
 import java.nio.ByteOrder;
 
-import org.apache.log4j.Logger;
-import org.jboss.netty.buffer.ChannelBuffer;
-import org.jboss.netty.buffer.ChannelBuffers;
-
-import com.gline.module.person.PlayerLogic;
+import io.netty.buffer.ByteBuf;
 
 import netBase.util.GameClient;
 
@@ -17,37 +13,37 @@ import netBase.util.GameClient;
  */
 public abstract class MessageManager
 {
-	private static final Logger log = Logger.getLogger(MessageManager.class);
+//private static final Logger log = Logger.getLogger(MessageManager.class);
 	
-	public static void send(GameClient client, ChannelBuffer buf)
+	public static void send(GameClient client, ByteBuf buf)
 	{
 
 		if(client ==null)
 		{
-			log.warn("该client对象为空，请检查");
+			//log.warn("该client对象为空，请检查");
 			return;			
 		}
 		if(client.getChannel()==null)
 		{
-			log.warn("该client的链接为空，尝试获取player关闭");
-			PlayerLogic.newInstance().downLine(client);	
+			//log.warn("该client的链接为空，尝试获取player关闭");
+		//	PlayerLogic.newInstance().downLine(client);
 			return;	
 		}
 		
 		if (!client.getChannel().isOpen()) {
-			log.warn("该链接关闭，不能继续调用通道，请检查： 是否未根据客户端关闭而关闭map里的链接");
-			PlayerLogic.newInstance().downLine(client);	
+			//log.warn("该链接关闭，不能继续调用通道，请检查： 是否未根据客户端关闭而关闭map里的链接");
+		//	PlayerLogic.newInstance().downLine(client);
 			return;
 		}
 		
-		client.getChannel().write(buf);  
+		//client.getChannel().write(buf);
 	}
 
 	
 	/**
 	 * 编码
 	 */
-	protected static ChannelBuffer encode(ChannelBuffer buffer, int moduleId, int opcode, Object... objects)
+	protected static ByteBuf encode(ByteBuf buffer, int moduleId, int opcode, Object... objects)
 	{
 		buffer.writeShort((short)moduleId);
 		buffer.writeShort((short)opcode);
@@ -123,7 +119,7 @@ public abstract class MessageManager
 	/**
 	 * 
 	 */
-	public static ChannelBuffer encodeResult(ChannelBuffer buffer, int moduleId, int opcode, int result, Object... objects)
+	public static ByteBuf encodeResult(ByteBuf buffer, int moduleId, int opcode, int result, Object... objects)
 	{
 		buffer.writeInt(result);
 		encode(buffer, moduleId,opcode,objects);
@@ -132,34 +128,34 @@ public abstract class MessageManager
   
   
 
-//BIG_ENDIAN
-  protected static ChannelBuffer createBuffer128()
+/*//BIG_ENDIAN
+  protected static ByteBuf createBuffer128()
   {
-    ChannelBuffer channelBuffer = ChannelBuffers.buffer(ByteOrder.BIG_ENDIAN, 128);
+	  ByteBuf channelBuffer = ByteBuf.buffer(ByteOrder.BIG_ENDIAN, 128);
     return channelBuffer;
   }
 
-  protected static ChannelBuffer createBuffer512()
+  protected static ByteBuf createBuffer512()
   {
-    ChannelBuffer channelBuffer = ChannelBuffers.buffer(ByteOrder.BIG_ENDIAN, 512);
+	  ByteBuf channelBuffer = ByteBuf.buffer(ByteOrder.BIG_ENDIAN, 512);
     return channelBuffer;
   }
 
-  protected static ChannelBuffer createBuffer1024()
+  protected static ByteBuf createBuffer1024()
   {
-    ChannelBuffer channelBuffer = ChannelBuffers.buffer(ByteOrder.BIG_ENDIAN, 1024);
+	  ByteBuf channelBuffer = ByteBuf.buffer(ByteOrder.BIG_ENDIAN, 1024);
     return channelBuffer;
   }
 
-  protected static ChannelBuffer createBuffer2048()
+  protected static ByteBuf createBuffer2048()
   {
-    ChannelBuffer channelBuffer = ChannelBuffers.buffer(ByteOrder.BIG_ENDIAN, 2048);
+	  ByteBuf channelBuffer = ByteBuf.buffer(ByteOrder.BIG_ENDIAN, 2048);
     return channelBuffer;
   }
 
-  protected static ChannelBuffer createBuffer(int length)
+  protected static ByteBuf createBuffer(int length)
   {
-    ChannelBuffer channelBuffer = ChannelBuffers.buffer(ByteOrder.BIG_ENDIAN, length);
+	  ByteBuf channelBuffer = ByteBuf.buffer(ByteOrder.BIG_ENDIAN, length);
     return channelBuffer;
-  }
+  }*/
 }

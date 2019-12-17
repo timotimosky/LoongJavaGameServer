@@ -1,3 +1,4 @@
+/*
 package netBase.http;
 
 import java.io.UnsupportedEncodingException;
@@ -14,24 +15,28 @@ import org.jboss.netty.handler.codec.http.HttpResponse;
 import org.jboss.netty.handler.codec.http.HttpResponseStatus;
 import org.jboss.netty.handler.codec.http.HttpVersion;
 
+*/
 /**
  * 发送消息管理类
  * @author 
  * @date 2013-3-27
- */
+ *//*
+
 class SendManager
 {
 	private static Logger log = Logger.getLogger(SendManager.class);
 	
 	
-	/**
+	*/
+/**
 	 * 发送消息
 	 * @param connection
 	 * 							连接
 	 * @param sp
 	 * 							数据包
 	 * @create 2013-3-27 
-	 */
+	 *//*
+
 	static <T extends HttpConnection>void send(T connection, SendablePacket<T> sp)
 	{
 		sp.write(connection);
@@ -43,14 +48,16 @@ class SendManager
 	}
 	
 	
-	/**
+	*/
+/**
 	 * 发送消息
 	 * @param connection		
 	 * 							连接
 	 * @param data
 	 * 							数据内容
 	 * @create 2013-3-27 
-	 */
+	 *//*
+
 	static void send(HttpConnection connection, String data)
 	{
 		if(connection.getChannel() == null)
@@ -78,14 +85,16 @@ class SendManager
 		connection.close();
 	}
 	
-	/**
+	*/
+/**
 	 * 获得指定数据内容的byte数组表示形式
 	 * @param data
 	 * 					数据内容
 	 * @return
 	 * 					返回byte[]
 	 * @create 2013-
-	 */
+	 *//*
+
 	private static byte[] getBytes(String data)
 	{
 		byte[] _data = null;
@@ -109,7 +118,8 @@ class SendManager
 		return _data;
 	}
 	
-	/**
+	*/
+/**
 	 * 获得数据内容
 	 * @param opcode
 	 * 						命令号
@@ -118,7 +128,8 @@ class SendManager
 	 * @return
 	 * 						返回数据内容
 	 * @create 2013-3-27
-	 */
+	 *//*
+
 	private static String getData(int opcode, String _buffer)
 	{
 		StringBuilder builder = new StringBuilder();
@@ -128,7 +139,8 @@ class SendManager
 		return builder.toString();
 	}
 	
-	/**
+	*/
+/**
 	 * 发送消息
 	 * @param channel
 	 * 						连接
@@ -137,7 +149,8 @@ class SendManager
 	 * @param result
 	 * 						结果集
 	 * @create 2013-3-27 
-	 */
+	 *//*
+
 	static void send(Channel channel, int opcode, Result result)
 	{
 		StringBuilder builder = new StringBuilder();
@@ -165,3 +178,4 @@ class SendManager
 		channel.close().awaitUninterruptibly();
 	}
 }
+*/

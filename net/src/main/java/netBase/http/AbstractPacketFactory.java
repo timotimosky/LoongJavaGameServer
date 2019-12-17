@@ -1,13 +1,16 @@
+/*
 package netBase.http;
 
 import java.util.HashMap;
 
 
+*/
 /**
  * 数据包工厂
  * @author du'xiang
  *
- */
+ *//*
+
 public abstract class AbstractPacketFactory<T extends HttpConnection>
 {
 	
@@ -28,48 +31,60 @@ public abstract class AbstractPacketFactory<T extends HttpConnection>
 		this.sendableMap = sendableMap;
 	}
 	
-	/**
+	*/
+/**
 	 * 初始化接收数据包队列
-	 */
+	 *//*
+
 	protected abstract void initReceivable();
 	
 	
-	/**
+	*/
+/**
 	 * 初始化发送数据包队列
-	 */
+	 *//*
+
 	protected abstract void initSendable();
 	
-	/**
+	*/
+/**
 	 * 初始化数据包
-	 */
+	 *//*
+
 	public void initPacket()
 	{
 		initReceivable();
 		initSendable();
 	}
 	
-	/**
+	*/
+/**
 	 * 增加接收数据包
 	 * @param opcode
 	 * @param rp
-	 */
+	 *//*
+
 	public void addReceivable(int opcode,ReceivablePacket<T> rp)
 	{
 		this.receivableMap.put(opcode, rp);
 	}
 	
-	/**
+	*/
+/**
 	 * 增加发送数据包
-	 */
+	 *//*
+
 	public void addSendable(Class<? extends SendablePacket<T>> sb,int opcode)
 	{
 		this.sendableMap.put(sb, opcode);
 	}
 	
 	
-	/**
+	*/
+/**
 	 * 得到接收数据包
-	 */
+	 *//*
+
 	public ReceivablePacket<T> getReceivable(int opcode)
 	{
 		ReceivablePacket<T> rp = this.receivableMap.get(opcode);
@@ -85,9 +100,11 @@ public abstract class AbstractPacketFactory<T extends HttpConnection>
 		}
 	}
 	
-	/**
+	*/
+/**
 	 * 得到发送的数据包
-	 */
+	 *//*
+
 	public void getSendable(SendablePacket<T> packet)
 	{
 		int opcode = this.sendableMap.get(packet.getClass());
@@ -95,3 +112,4 @@ public abstract class AbstractPacketFactory<T extends HttpConnection>
 		packet.setOpcode(opcode);
 	}
 }
+*/

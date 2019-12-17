@@ -2,6 +2,7 @@ package netBase;
 
 import java.io.Serializable;
 
+import io.netty.buffer.ByteBuf;
 import org.jboss.netty.buffer.ChannelBuffer;
 
 
@@ -22,7 +23,7 @@ public class ReceivablePacket extends AbstractPacket  implements Serializable  ,
 	/**
 	 *
 	 */
-	public ReceivablePacket(int module, int opcode, ChannelBuffer buff )
+	public ReceivablePacket(int module, int opcode, ByteBuf buff )
 	{
 		super( module,  opcode,  buff );
 	}	

@@ -1,46 +1,61 @@
+/*
 package netBase.http;
 
 import netBase.http.config.HttpConfig;
 
 import org.jboss.netty.channel.Channel;
 
+*/
 /**
  * http连接
  * @author djl
  * @date 2013-3-26
- */
+ *//*
+
 public abstract class HttpConnection
 {
-	/**
+	*/
+/**
 	 * 连接ID
-	 */
+	 *//*
+
 	String id;
 	
-	/**
+	*/
+/**
 	 * IP
-	 */
+	 *//*
+
 	String ip;
 	
-	/**
+	*/
+/**
 	 * 帐号
-	 */
+	 *//*
+
 	String count;
 	
-	/**
+	*/
+/**
 	 * 当前连接
-	 */
+	 *//*
+
 	Channel channel;
 	
-	/**
+	*/
+/**
 	 * 最后一次操作时间
-	 */
+	 *//*
+
 	public long operateTime;
 	
-	/**
+	*/
+/**
 	 * 状态
 	 * true 该连接已经有效
 	 * false 该连接还没确定有效
-	 */
+	 *//*
+
 	boolean state;
 	
 	public HttpConnection(String id)
@@ -121,9 +136,11 @@ public abstract class HttpConnection
 		this.operateTime = System.currentTimeMillis();
 	}
 
-	/**
+	*/
+/**
 	 * 关闭连接
-	 */
+	 *//*
+
 	void close()
 	{
 		if(channel != null)
@@ -135,12 +152,15 @@ public abstract class HttpConnection
 	}
 	
 	
-	/**
+	*/
+/**
 	 * 关闭连接
-	 */
+	 *//*
+
 	public void shutDown()
 	{
 		close();
 		
 	}
 }
+*/

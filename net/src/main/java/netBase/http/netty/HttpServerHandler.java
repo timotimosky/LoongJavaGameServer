@@ -1,3 +1,4 @@
+/*
 package netBase.http.netty;
 
 import static org.jboss.netty.handler.codec.http.HttpHeaders.isKeepAlive;
@@ -41,9 +42,11 @@ public class HttpServerHandler extends SimpleChannelUpstreamHandler
 	private HttpRequest request;
 	
 	
-	/**
+	*/
+/**
 	 * 接收到消息的处理
-	 */
+	 *//*
+
 	@Override
 	public void messageReceived(ChannelHandlerContext ctx, MessageEvent e)
 	{
@@ -54,7 +57,9 @@ public class HttpServerHandler extends SimpleChannelUpstreamHandler
 		{
 
 			String url = URLDecoder.decode(request.getUri(),"UTF-8");
-			/*解包*/
+			*/
+/*解包*//*
+
 			//String data = url.substring(url.indexOf(HttpConfig.URI_SPLIT), url.length());
 			
 			int index = url.indexOf("/");
@@ -73,7 +78,9 @@ public class HttpServerHandler extends SimpleChannelUpstreamHandler
 			}
 			
 			log.info("http-----------有消息到来array== "+array.length);	
-			/*执行包内容*/
+			*/
+/*执行包内容*//*
+
 			//ReceivablePacket<?> packet = Subcontract.execute(ctx.getChannel(), array);
 				
 			//if(packet == null)
@@ -98,9 +105,11 @@ public class HttpServerHandler extends SimpleChannelUpstreamHandler
 	
 	
 
-	/**
+	*/
+/**
 	 * 异常处理
-	 */
+	 *//*
+
 	@Override 
     public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e)throws Exception
     {  
@@ -121,11 +130,13 @@ public class HttpServerHandler extends SimpleChannelUpstreamHandler
     } 
 	
  
-	/**
+	*/
+/**
 	 * 发送错误
 	 * @param ctx
 	 * @param status
-	 */
+	 *//*
+
     private void sendError(ChannelHandlerContext ctx, HttpResponseStatus status)
     {  
         HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, status);  
@@ -188,3 +199,4 @@ public class HttpServerHandler extends SimpleChannelUpstreamHandler
     }
     
 }
+*/

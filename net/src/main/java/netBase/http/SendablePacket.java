@@ -1,13 +1,16 @@
+/*
 package netBase.http;
 
 
 
+*/
 /**
  * 发送出去的包
  * @author 
  * @create 2013-3-27
  * @param <T>
- */
+ *//*
+
 public abstract class SendablePacket<T extends HttpConnection> extends AbstractPacketHttp
 {
 
@@ -27,3 +30,4 @@ public abstract class SendablePacket<T extends HttpConnection> extends AbstractP
 	
 	
 }
+*/

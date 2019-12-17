@@ -1,27 +1,36 @@
+/*
 package netBase.http.ip;
 
+*/
 /**
  * IP信息
  * @author djl
  * @date 2013-3-26
- */
+ *//*
+
 public class IPInfo
 {
-	/**
+	*/
+/**
 	 * IP地址
-	 */
+	 *//*
+
 	String ip;
 	
 	
-	/**
+	*/
+/**
 	 * 数量
-	 */
+	 *//*
+
 	int num;
 	
 	
-	/**
+	*/
+/**
 	 * 最大数量
-	 */
+	 *//*
+
 	int numMax;
 	
 	
@@ -71,3 +80,4 @@ public class IPInfo
 	
 
 }
+*/

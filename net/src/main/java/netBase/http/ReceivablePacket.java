@@ -1,3 +1,4 @@
+/*
 package netBase.http;
 
 import java.nio.BufferUnderflowException;
@@ -6,11 +7,13 @@ import org.apache.log4j.Logger;
 
 
 
+*/
 /**
  * 接收数据包超类
  * @author djl
  * @create 2013-3-26
- */
+ *//*
+
 public abstract class ReceivablePacket<T extends HttpConnection> extends AbstractPacketHttp  implements Runnable,Cloneable
 {
 	protected static Logger log = Logger.getLogger(ReceivablePacket.class); 
@@ -56,7 +59,9 @@ public abstract class ReceivablePacket<T extends HttpConnection> extends Abstrac
 		{
 			StringBuilder builder = new StringBuilder("命令[").append(this.opcode).append("]无法解析。");
 			log.warn(builder.toString(), e);
-			/*发送错误信息*/
+			*/
+/*发送错误信息*//*
+
 			SendManager.send(getClient().getChannel(), this.opcode, new DefaultResult("内容无法解析。"));
 		}
 		
@@ -68,12 +73,16 @@ public abstract class ReceivablePacket<T extends HttpConnection> extends Abstrac
 		{
 			StringBuilder builder = new StringBuilder("命令[").append(this.opcode).append("]异常。");
 			log.warn(builder.toString(), e);
-			/*发送错误信息*/
+			*/
+/*发送错误信息*//*
+
 			SendManager.send(getClient().getChannel(), this.opcode, new DefaultResult("错误啦！"));
 		} 
 		finally
 		{
-			/*错误返回*/
+			*/
+/*错误返回*//*
+
 			//getClient().setState(Boolean.FALSE);
 		}
 	}
@@ -101,3 +110,4 @@ public abstract class ReceivablePacket<T extends HttpConnection> extends Abstrac
 		//SendManager.send(getClient(), sp);
 	}
 }
+*/

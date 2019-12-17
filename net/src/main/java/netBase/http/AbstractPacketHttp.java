@@ -1,29 +1,34 @@
+/*
 package netBase.http;
 
 
 import org.jboss.netty.buffer.ChannelBuffer;
 
+*/
 /**
  * 网络数据包
  * 
  * 其实可以用client代替playerID作为key
  * @author TimoSky..
  *
- */
+ *//*
+
 public abstract class AbstractPacketHttp <T extends HttpConnection>
 {
-	protected int opcode;//����
+	protected int opcode;//
 	
-	private ChannelBuffer buffer;//������
+	private ChannelBuffer buffer;//
 		
-	private int module;//ģ��	
+	private int module;//
 	
-	private T client;// ����
+	private T client;//
 	
 	
-	/**
-	 * ���캯��
-	 */
+	*/
+/**
+	 *
+	 *//*
+
 	public AbstractPacketHttp(int module, int opcode, ChannelBuffer buff)
 	{
 		this.module = module;
@@ -45,7 +50,9 @@ public abstract class AbstractPacketHttp <T extends HttpConnection>
 	
 	
 	
-	/*-------------get set方法------------*/
+	*/
+/*-------------get set方法------------*//*
+
 	
 	
 	public int getModule() {
@@ -88,3 +95,4 @@ public abstract class AbstractPacketHttp <T extends HttpConnection>
 	
 	
 }
+*/

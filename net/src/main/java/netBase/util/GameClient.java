@@ -1,8 +1,6 @@
 package netBase.util;
 
-import org.jboss.netty.channel.Channel;
-
-import com.gline.module.person.PlayerEntity;
+import io.netty.channel.Channel;
 
 /* 玩家的通信通道 和玩家实体的 封装类װ
  * @author  timosky

@@ -1,5 +1,8 @@
 package netBase.netty;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.Channel;
@@ -13,7 +16,7 @@ import org.jboss.netty.handler.codec.oneone.OneToOneEncoder;
  * @date 2013-1-9
  */ 
 @Sharable
-public class ServerEncoder extends OneToOneEncoder {  
+public class ServerEncoder extends OneToOneEncoder {
 
 /*	private ServerEncoder(){}
 	private static final class singleton{
@@ -28,11 +31,11 @@ public class ServerEncoder extends OneToOneEncoder {
 	@Override
 	protected Object encode(ChannelHandlerContext ctx, Channel ch, Object msg) throws Exception
 	{	
-		if(!(msg instanceof ChannelBuffer)){
+		if(!(msg instanceof ByteBuf)){
 			return msg;
 		}
-		
-		ChannelBuffer chnBuf= (ChannelBuffer)msg;	
+
+		ByteBuf chnBuf= (ByteBuf)msg;
 
 		int datalength = chnBuf.readableBytes();
 		//log.infof("编码 datalength========================"+datalength);

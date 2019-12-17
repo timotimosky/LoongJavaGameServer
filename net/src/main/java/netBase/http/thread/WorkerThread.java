@@ -1,3 +1,4 @@
+/*
 package netBase.http.thread;
 
 import java.util.Iterator;
@@ -7,11 +8,13 @@ import netBase.http.HttpConnection;
 import netBase.http.config.HttpConfig;
 import thread.ExecuteThreadOnly;
 
+*/
 /**
  * 工作任务
  * @author djl
  * @date 2013-3-27
- */
+ *//*
+
 public class WorkerThread extends ExecuteThreadOnly 
 {
 	
@@ -50,7 +53,9 @@ public class WorkerThread extends ExecuteThreadOnly
 				{
 					expiredTime = http.operateTime + HttpConfig.CONNECTION_DOWN_TIME;
 				}
-				/*判断是否过期*/
+				*/
+/*判断是否过期*//*
+
 				if(time > expiredTime)
 				{
 					http.shutDown();
@@ -62,3 +67,4 @@ public class WorkerThread extends ExecuteThreadOnly
 	}
 
 }
+*/

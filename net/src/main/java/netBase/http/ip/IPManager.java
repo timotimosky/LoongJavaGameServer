@@ -1,12 +1,15 @@
+/*
 package netBase.http.ip;
 
 
 
+*/
 /**
  * IP管理
  * @author djl
  * @create 2013-3-26
- */
+ *//*
+
 public class IPManager extends AbstractIPManager<Long, IPInfo>
 {
 	private static class SingleInstance
@@ -23,14 +26,16 @@ public class IPManager extends AbstractIPManager<Long, IPInfo>
 		return SingleInstance.instance;
 	}
 	
-	/**
+	*/
+/**
 	 * 创建一个IP信息
 	 * @param ip				IP地址
 	 * @param numMax			最大数量限制
 	 * @return					
 	 * 				返回IPinfo类
 	 * @create 2013-3-26 djl
-	 */
+	 *//*
+
 	public static IPInfo createIPInfo(String ip, int numMax)
 	{
 		return new IPInfo(ip, numMax);
@@ -69,14 +74,16 @@ public class IPManager extends AbstractIPManager<Long, IPInfo>
 		return this.map.get(k);
 	}
 
-	/**
+	*/
+/**
 	 * 判断此IP是否存在
 	 * @param adress		地址
 	 * @return
 	 * 				false 不存在
 	 * 				true 存在
 	 * @create 2013-3-27 djl
-	 */
+	 *//*
+
 	public boolean isIPExist(String adress)
 	{
 		if(this.map.containsKey(toLong(adress)))
@@ -85,3 +92,4 @@ public class IPManager extends AbstractIPManager<Long, IPInfo>
 			return Boolean.FALSE;
 	}
 }
+*/
