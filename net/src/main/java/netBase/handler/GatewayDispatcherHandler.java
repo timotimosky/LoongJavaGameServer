@@ -3,7 +3,12 @@ package netBase.handler;
 
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
-import netBase.netty.BaseDispatcherHandler;
+import netBase.packet.AbstractPacket;
+import netBase.util.Session;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.function.BiFunction;
 //import org.apache.log4j;
 
 /**
@@ -12,16 +17,19 @@ import netBase.netty.BaseDispatcherHandler;
 @ChannelHandler.Sharable
 public class GatewayDispatcherHandler extends BaseDispatcherHandler {
 
-    //private static final Logger logger = LoggerFactory.getLogger(GatewayDispatcherHandler.class);
+    private static final Logger logger = LoggerFactory.getLogger(GatewayDispatcherHandler.class);
 
-   // private BiFunction<Session, IPacket, Boolean> packetFilter;
+    private BiFunction<Session, AbstractPacket, Boolean> packetFilter;
 
-/*    public GatewayDispatcherHandler(BiFunction<Session, IPacket, Boolean> packetFilter) {
+    public GatewayDispatcherHandler(BiFunction<Session, AbstractPacket, Boolean> packetFilter) {
         this.packetFilter = packetFilter;
-    }*/
+    }
+
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
+
+        logger.info("GatewayDispatcherHandler ----channelRead ");
         /*var session = SessionUtils.getSession(ctx);
         if (session == null) {
             return;

@@ -7,8 +7,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import netBase.AloneNetMap;
-import netBase.ReceivablePacket;
-import netBase.util.GameClient;
+import netBase.packet.ReceivablePacket;
+import netBase.util.Session;
 import netBase.util.NetLink;
 
 import org.apache.log4j.Logger;
@@ -92,7 +92,7 @@ public class NetWorkerThread extends Thread
 	 */
 	private void action()
 	{	
-		for(Entry<GameClient,NetLink> e : AloneNetMap.netMap.entrySet())
+		for(Entry<Session,NetLink> e : AloneNetMap.netMap.entrySet())
 		{		    
 		    NetLink netLink = e.getValue();
 		    

@@ -1,10 +1,6 @@
 package netBase.thread;
 
-import com.gline.controller.contrlBase.ControlRealize;
-
-import netBase.AloneNetMap;
-import netBase.ReceivablePacket;
-import netBase.util.GameClient;
+import netBase.packet.ReceivablePacket;
 
 
 /**
@@ -30,9 +26,9 @@ public class BusinessRunable  implements Runnable {
 		
 		try
 		{			
-			GameClient client = pack.getClient();	
+			//GameClient client = pack.getClient();
 			/*core*/	
-			ControlRealize.ControllerWait(client,pack);
+		//	ControlRealize.ControllerWait(client,pack);
 			
 			Thread.sleep(this.sleepTime);
 			
@@ -56,7 +52,7 @@ public class BusinessRunable  implements Runnable {
 			///释放队列区域
 			//log.infoln("操作完毕，重新设为非阻塞");
 			
-			AloneNetMap.netMap.setBlockProcess(pack.getClient());
+			//AloneNetMap.netMap.setBlockProcess(pack.getClient());
 		}
 	
 		

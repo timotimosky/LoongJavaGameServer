@@ -3,7 +3,7 @@ package netBase.util;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import netBase.ReceivablePacket;
+import netBase.packet.ReceivablePacket;
 
 
 /**

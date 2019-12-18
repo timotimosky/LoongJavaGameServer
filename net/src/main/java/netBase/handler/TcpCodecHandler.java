@@ -3,7 +3,9 @@ package netBase.handler;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageCodec;
-import netBase.ReceivablePacket;
+import netBase.packet.ReceivablePacket;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -11,13 +13,19 @@ import java.util.List;
  */
 public class TcpCodecHandler extends ByteToMessageCodec<ReceivablePacket> {
 
-    //private static final Logger logger = LoggerFactory.getLogger(TcpPacketCodecHandler.class);
+    private static final Logger logger = LoggerFactory.getLogger(TcpCodecHandler.class);
 
     private int length;
 
+    //解码
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf buffer, List<Object> out) {
 
+
+        logger.info(" TcpCodecHandler ---触发解码");
+
+
+        //todo: 这里改成Unity的解码那样 避免这4位数据的BUG
         if (buffer.readableBytes() < 4) {
             //log.warn("message short than four!");
             return;
@@ -48,6 +56,7 @@ public class TcpCodecHandler extends ByteToMessageCodec<ReceivablePacket> {
         out.add(pack);
     }
 
+    //编码
     @Override
     protected void encode(ChannelHandlerContext ctx, ReceivablePacket packetInfo, ByteBuf outbuf) {
 

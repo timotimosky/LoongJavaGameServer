@@ -1,3 +1,4 @@
+/*
 package netBase.util;
 
 
@@ -5,18 +6,22 @@ import java.io.StringWriter;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
+*/
 /**
  * 对象转换json
  * @author 
  *
- */
+ *//*
+
 public class ObjectTransString 
 {
 	private static ObjectMapper obj = new ObjectMapper();
-	/**
+	*/
+/**
 	 * 对象转换成json
 	 * @return
-	 */
+	 *//*
+
 	public static String objectTransString(Object object)
 	{
 		
@@ -34,3 +39,4 @@ public class ObjectTransString
 		return sw.toString();
 	}
 }
+*/

@@ -3,8 +3,6 @@ package netBase.Manager;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
-
 
 /**
  * 模块注册
@@ -13,7 +11,7 @@ import org.apache.log4j.Logger;
  */
 public class ModuleManager {
 	
-	public static Logger log = Logger.getLogger(ModuleManager.class);
+	//public static Logger log = Logger.getLogger(ModuleManager.class);
 	private final static ModuleManager singleton = new ModuleManager();
 	private ModuleManager() {}
 	public static ModuleManager getInstance() {
@@ -29,13 +27,13 @@ public class ModuleManager {
 	{	
 		if(modelMap.containsKey(type))
 		{
-			log.info("model已经注册");
+			//log.info("model已经注册");
 			return ;
 		}
 		
 		modelMap.put(type, clazz);
 		
-		log.info("model注册成功"+clazz.getName());
+	//	log.info("model注册成功"+clazz.getName());
 	}
 	
 	/**

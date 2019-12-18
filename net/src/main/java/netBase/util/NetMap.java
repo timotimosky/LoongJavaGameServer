@@ -4,13 +4,13 @@ package netBase.util;
 import java.util.concurrent.ConcurrentHashMap;
 
 import netBase.AloneNetMap;
-import netBase.ReceivablePacket;
+import netBase.packet.ReceivablePacket;
 
 /**
  *
  *<Integer,NetLink> --> key(Id),value()
  */
-public class NetMap extends ConcurrentHashMap<GameClient,NetLink>
+public class NetMap extends ConcurrentHashMap<Session,NetLink>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -20,7 +20,7 @@ public class NetMap extends ConcurrentHashMap<GameClient,NetLink>
 	 * 创建映射，玩家ID对应玩家消息队列
 	 * @param playerId
 	 */
-	public void careteNewLinek(GameClient gameClient)
+	public void careteNewLinek(Session gameClient)
 	{
 		
 		if(null ==  AloneNetMap.netMap.get(gameClient))
@@ -35,7 +35,7 @@ public class NetMap extends ConcurrentHashMap<GameClient,NetLink>
 	}
 
 	
-	public void removeNewLinek(GameClient gameClient)
+	public void removeNewLinek(Session gameClient)
 	{
 		if(AloneNetMap.netMap.get(gameClient).size() <= 0)
 		{
@@ -48,7 +48,7 @@ public class NetMap extends ConcurrentHashMap<GameClient,NetLink>
 	 * @param playerId
 	 * @param pack
 	 */
-	public void addPack(GameClient playerGameClient,ReceivablePacket pack) throws CloneNotSupportedException
+	public void addPack(Session playerGameClient, ReceivablePacket pack) throws CloneNotSupportedException
 	{
 		if(null == AloneNetMap.netMap.get(playerGameClient))
 		{
@@ -63,7 +63,7 @@ public class NetMap extends ConcurrentHashMap<GameClient,NetLink>
 	/**
 	 * 设置特定玩家的消息队列阻塞
 	 */
-	public void setBlockProcess(GameClient clinetId)
+	public void setBlockProcess(Session clinetId)
 	{
 		NetLink link = this.get(clinetId);
 		

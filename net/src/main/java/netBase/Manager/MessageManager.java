@@ -1,10 +1,8 @@
 package netBase.Manager;
 
-import java.nio.ByteOrder;
-
 import io.netty.buffer.ByteBuf;
 
-import netBase.util.GameClient;
+import netBase.util.Session;
 
 /**
  * 消息管理类
@@ -15,7 +13,7 @@ public abstract class MessageManager
 {
 //private static final Logger log = Logger.getLogger(MessageManager.class);
 	
-	public static void send(GameClient client, ByteBuf buf)
+	public static void send(Session client, ByteBuf buf)
 	{
 
 		if(client ==null)

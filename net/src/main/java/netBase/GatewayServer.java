@@ -5,12 +5,24 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.timeout.IdleStateHandler;
-import netBase.handler.ServerDispatcherHandler;
+import netBase.packet.AbstractPacket;
+import netBase.core.AbstractServer;
+import netBase.handler.GatewayDispatcherHandler;
 import netBase.handler.ServerIdleHandler;
 import netBase.handler.TcpCodecHandler;
+import netBase.util.Session;
+
+import java.util.function.BiFunction;
 
 public class GatewayServer extends AbstractServer {
 
+    //action
+    private BiFunction<Session, AbstractPacket, Boolean> packetFilter;
+
+
+    public GatewayServer(String host,int port) {
+        super(host,port);
+    }
 
     @Override
     public ChannelInitializer<SocketChannel> channelChannelInitializer() {
@@ -20,6 +32,11 @@ public class GatewayServer extends AbstractServer {
 
     private static class GatewayChannelHandler extends ChannelInitializer<SocketChannel> {
 
+        private BiFunction<Session, AbstractPacket, Boolean> packetFilter;
+
+        public GatewayChannelHandler(BiFunction<Session, AbstractPacket, Boolean> packetFilter) {
+            this.packetFilter = packetFilter;
+        }
 
         @Override
         protected void initChannel(SocketChannel channel) {
@@ -31,7 +48,8 @@ public class GatewayServer extends AbstractServer {
            // pipeline.addLast("encoder", new WriteEncoder());
             pipeline.addLast(new ServerIdleHandler());
             pipeline.addLast(new TcpCodecHandler());
-            pipeline.addLast(new ServerDispatcherHandler());
+           // pipeline.addLast(new ServerDispatcherHandler());
+            pipeline.addLast(new GatewayDispatcherHandler(packetFilter));
         }
 
         /*@Override

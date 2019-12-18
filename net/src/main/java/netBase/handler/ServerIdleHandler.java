@@ -5,6 +5,8 @@ import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * 心跳handler
@@ -12,7 +14,7 @@ import io.netty.handler.timeout.IdleStateEvent;
 @ChannelHandler.Sharable
 public class ServerIdleHandler extends ChannelDuplexHandler {
 
-  //  private static final Logger logger = LoggerFactory.getLogger(ServerIdleHandler.class);
+    private static final Logger logger = LoggerFactory.getLogger(ServerIdleHandler.class);
 
 
     //netty4使用IdleStateHandler来检测连接状态
@@ -20,7 +22,7 @@ public class ServerIdleHandler extends ChannelDuplexHandler {
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
 
-
+        logger.info(" ServerIdleHandler ----- 触发心跳回调");
         //TODO：这里心跳处理有BUG
         if (evt instanceof IdleStateEvent) {
             IdleStateEvent event = (IdleStateEvent) evt;
