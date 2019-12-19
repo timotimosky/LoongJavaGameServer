@@ -4,7 +4,7 @@ package netBase.handler;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import netBase.packet.AbstractPacket;
-import netBase.util.Session;
+import netBase.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

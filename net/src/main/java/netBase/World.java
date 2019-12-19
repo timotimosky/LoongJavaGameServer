@@ -3,7 +3,6 @@ package netBase;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import io.netty.channel.ChannelId;
-import netBase.util.Session;
 
 //保存整个游戏服所有链接
 public class World<T extends Session>

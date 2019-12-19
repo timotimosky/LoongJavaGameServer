@@ -6,6 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import netBase.packet.AbstractPacket;
+import netBase.packet.HeartBeatPacket;
 import netBase.packet.SendablePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,7 @@ public class ClientIdleHandler extends ChannelDuplexHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(ClientIdleHandler.class);
 
-   private static final SendablePacket heartbeatPacket = new SendablePacket(1001,10,null);
+   private static final HeartBeatPacket heartbeatPacket = new HeartBeatPacket();
 
    //定时回调
     @Override

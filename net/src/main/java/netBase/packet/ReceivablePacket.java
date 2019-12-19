@@ -13,7 +13,6 @@ public class ReceivablePacket extends AbstractPacket implements Serializable  , 
 	
 	private static final long serialVersionUID = 1L;
 	
-	
 	public ReceivablePacket clone() throws CloneNotSupportedException
 	{      return (ReceivablePacket)super.clone();
     }

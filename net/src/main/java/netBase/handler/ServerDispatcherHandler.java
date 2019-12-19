@@ -5,8 +5,7 @@ import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelId;
 import netBase.World;
-import netBase.util.NetMap;
-import netBase.util.Session;
+import netBase.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

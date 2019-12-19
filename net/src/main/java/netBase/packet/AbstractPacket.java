@@ -1,9 +1,10 @@
 package netBase.packet;
 
 import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.ChannelId;
 import netBase.World;
-import netBase.util.Session;
+import netBase.Session;
 
 /**
  * 网络数据包
@@ -15,10 +16,10 @@ import netBase.util.Session;
 public abstract class AbstractPacket
 {
 	protected short opcode;//
-	
-	private ByteBuf buffer;//
-		
-	private int module;//
+
+	protected ByteBuf buffer;//
+
+	protected int module;//
 	
 	private Session client;//
 	

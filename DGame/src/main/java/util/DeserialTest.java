@@ -4,14 +4,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException; 
 import java.io.ObjectInputStream;
-
 import org.apache.log4j.Logger;
 
-import netBase.netty.ServerHandler;
 
 public class DeserialTest {
 
-	private static final Logger log = Logger.getLogger(ServerHandler.class);
+	private static final Logger log = Logger.getLogger(DeserialTest.class);
 /**   * @param args   */
 	public static void main(String[] args) {  
 		

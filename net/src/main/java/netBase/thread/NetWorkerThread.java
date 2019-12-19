@@ -8,8 +8,8 @@ import java.util.concurrent.TimeUnit;
 
 import netBase.AloneNetMap;
 import netBase.packet.ReceivablePacket;
-import netBase.util.Session;
-import netBase.util.NetLink;
+import netBase.Session;
+import netBase.NetLink;
 
 import org.apache.log4j.Logger;
 

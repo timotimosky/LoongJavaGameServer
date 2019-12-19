@@ -4,14 +4,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream; 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-
 import org.apache.log4j.Logger;
 
-import netBase.netty.ServerHandler;
 
 public class SerialTest {
 
-	private static final Logger log = Logger.getLogger(ServerHandler.class);
+	private static final Logger log = Logger.getLogger(SerialTest.class);
 /**   * @param args   */ 
 	public static void main(String[] args) 
 	{  

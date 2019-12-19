@@ -3,8 +3,8 @@ package com.gline.controller.ALL;
 import org.apache.log4j.Logger;
 
 import com.gline.controller.ControllerModel;
-import com.gline.controller.contrlBase.ClassAnn;
-import com.gline.controller.contrlBase.ControllerAnnotation;
+import netBase.contrlBase.ClassAnn;
+import netBase.contrlBase.ControllerAnnotation;
 
 import netBase.util.GameClient;
 

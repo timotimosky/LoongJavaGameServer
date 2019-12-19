@@ -1,8 +1,8 @@
 package thread;
 
 /**
- * ѭ���߳�ִ�г�����
- * @author ������ 
+ *
+ * @author
  * @date 2013-1-14
  */
 public abstract class ExecuteThreadEver implements Runnable

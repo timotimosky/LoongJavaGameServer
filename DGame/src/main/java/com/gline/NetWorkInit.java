@@ -30,7 +30,7 @@ public class NetWorkInit
 	public void init() throws Exception
 	{
 		log.info("--------->>>>>>>>>initController");
-		LoadController.load();
+		//LoadController.load();
 		log.info("--------->>>>>>>>>initResolve");
 		initResolve();
 		

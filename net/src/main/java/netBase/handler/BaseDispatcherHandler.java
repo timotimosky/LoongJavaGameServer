@@ -7,7 +7,7 @@ import io.netty.util.AttributeKey;
 import netBase.AloneNetMap;
 import netBase.packet.ReceivablePacket;
 import netBase.World;
-import netBase.util.Session;
+import netBase.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

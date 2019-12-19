@@ -7,7 +7,7 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.concurrent.DefaultThreadFactory;
-import netBase.util.Session;
+import netBase.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

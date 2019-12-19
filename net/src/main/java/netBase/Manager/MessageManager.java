@@ -2,7 +2,7 @@ package netBase.Manager;
 
 import io.netty.buffer.ByteBuf;
 
-import netBase.util.Session;
+import netBase.Session;
 
 /**
  * 消息管理类

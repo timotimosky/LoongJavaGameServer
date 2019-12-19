@@ -8,8 +8,8 @@ import org.apache.log4j.Logger;
 
 import com.gline.GameManager;
 import com.gline.controller.ControllerModel;
-import com.gline.controller.contrlBase.ClassAnn;
-import com.gline.controller.contrlBase.ControllerAnnotation;
+import netBase.contrlBase.ClassAnn;
+import netBase.contrlBase.ControllerAnnotation;
 import com.gline.message.FightMessage;
 import com.gline.module.fish.FishEnity;
 import com.gline.module.person.PlayerEntity;

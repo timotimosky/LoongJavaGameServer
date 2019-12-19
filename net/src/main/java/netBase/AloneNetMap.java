@@ -1,8 +1,5 @@
 package netBase;
 
-import netBase.util.NetMap;
-
-
 
 /**
  *
