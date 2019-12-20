@@ -13,7 +13,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="ARPG" target="11" />
       <module name="DGame" target="1.5" />
       <module name="JavaGameServer" target="1.5" />
       <module name="net" target="11" />

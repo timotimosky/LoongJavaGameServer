@@ -1,5 +1,9 @@
 package netBase.handler;
 
+
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.buffer.UnpooledHeapByteBuf;
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
@@ -10,6 +14,8 @@ import netBase.packet.HeartBeatPacket;
 import netBase.packet.SendablePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.nio.ByteBuffer;
 
 /**
  * @author jaysunxiao
@@ -32,7 +38,16 @@ public class ClientIdleHandler extends ChannelDuplexHandler {
             //如果读写都闲置，才发一次心跳，减少心跳量
             if (event.state() == IdleState.ALL_IDLE) {
                 logger.info("client sends heartbeat packet to [server:{}]", ctx);
-                ctx.channel().writeAndFlush(heartbeatPacket);
+
+                ByteBuf writeBuffer = Unpooled.directBuffer();
+                writeBuffer.writeInt(10);
+                writeBuffer.writeShort(1);
+                writeBuffer.writeShort(200);
+                writeBuffer.writeShort(1001);
+                writeBuffer.writeInt(123456);
+
+
+                ctx.channel().writeAndFlush(writeBuffer);
             }
         }
 

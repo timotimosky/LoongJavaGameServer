@@ -4,6 +4,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelId;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.AttributeKey;
+import io.netty.util.ReferenceCountUtil;
 import netBase.AloneNetMap;
 import netBase.packet.ReceivablePacket;
 import netBase.World;
@@ -21,32 +22,41 @@ public class BaseDispatcherHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws CloneNotSupportedException {
+        boolean release = true;
 
-        logger.info(" 触发 channelRead");
-        if(!(msg instanceof ReceivablePacket))
-        {
-            return;
+        try {
+            logger.info(" 触发 channelRead");
+            if (!(msg instanceof ReceivablePacket)) {
+                return;
+            }
+
+            ReceivablePacket packet = (ReceivablePacket) msg;
+
+            if (packet.getBuffer().capacity() < 3) {
+                return;
+            }
+
+            ChannelId id = ctx.channel().id();
+            //添加映射
+            packet.addClient(id);
+
+            //log.infoln( ctx.getChannel().getId() + "的通道  messageReceived");
+
+            Session client = World.newInstance().getChannel(id);
+
+            /*将消息包放入玩家对应的消息队列*/
+            AloneNetMap.netMap.addPack(client, packet);
+        } finally {
+
+            //if (autoRelease && release)
+            if (release)
+            {
+
+                ReferenceCountUtil.release(msg);
+
+            }
+
         }
-
-        ReceivablePacket packet = (ReceivablePacket) msg;
-
-        if(packet.getBuffer().capacity()< 3)
-        {
-            return ;
-        }
-
-        ChannelId id = ctx.channel().id();
-        //添加映射
-        packet.addClient(id);
-
-        //log.infoln( ctx.getChannel().getId() + "的通道  messageReceived");
-
-        Session client = World.newInstance().getChannel(id);
-
-        /*将消息包放入玩家对应的消息队列*/
-        AloneNetMap.netMap.addPack(client,packet);
-
-
 
      /*   var session = SessionUtils.getSession(ctx);
         if (session == null) {

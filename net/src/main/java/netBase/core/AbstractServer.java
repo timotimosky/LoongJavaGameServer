@@ -6,9 +6,13 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.concurrent.DefaultThreadFactory;
+import io.netty.util.concurrent.EventExecutorGroup;
+import netBase.TcpClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public abstract class AbstractServer {
-
+    private static final Logger logger = LoggerFactory.getLogger(AbstractServer.class);
     // 配置服务端nio线程组，服务端接受客户端连接
     private EventLoopGroup bossGroup;
 
@@ -41,7 +45,8 @@ public abstract class AbstractServer {
 
         //2.定义工作组:boss分发请求给各个worker:boss负责监听端口请求，worker负责处理请求（读写）
         int cpuNum = Runtime.getRuntime().availableProcessors();
-        bossGroup = new NioEventLoopGroup(Math.max(1, cpuNum / 4), new DefaultThreadFactory("netty-boss", true));
+        //bossGroup = new NioEventLoopGroup(Math.max(1, cpuNum / 4), new DefaultThreadFactory("netty-boss", true));
+        bossGroup = new NioEventLoopGroup(cpuNum, new DefaultThreadFactory("netty-boss", true));
         workerGroup = new NioEventLoopGroup(cpuNum * 2, new DefaultThreadFactory("netty-worker", true));
 
         //1.定义server启动类
@@ -73,23 +78,31 @@ public abstract class AbstractServer {
 
        // allServers.add(this);
 
-        //logger.info("TcpServer started at [{}:{}]", hostAddress, port);
+        logger.info("TcpServer started at [{}:{}]", hostAddress, port);
     }
 
 
     public synchronized void shutdown() {
 
         try {
-            // 5.监听关闭
-            channelFuture.channel().closeFuture().sync();  //等待服务关闭，关闭后应该释放资源
+            if (channelFuture != null) {
+                logger.error("server shutdown!");
+                 //   channelFuture.channel().close().syncUninterruptibly();
+                    // 5.监听关闭
+                    channelFuture.channel().closeFuture().sync();  //等待服务关闭，关闭后应该释放资源
+            }
+            if (channel != null) {
+                channel.close();
+            }
         }
         catch (InterruptedException e) {
-            System.out.println("server start got exception!");
+            logger.error("server start got exception!");
             e.printStackTrace();
         }finally {
             //8.优雅的关闭资源
-            //boss.shutdownGracefully();
-           // worker.shutdownGracefully();
+            logger.error("server shutdown!2222222");
+            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
         }
     }
 

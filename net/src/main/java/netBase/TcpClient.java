@@ -30,7 +30,9 @@ public class TcpClient extends AbstractClient {
     private static class TcpChannelInitHandler extends ChannelInitializer<SocketChannel> {
         @Override
         protected void initChannel(SocketChannel channel) {
-            channel.pipeline().addLast(new IdleStateHandler(0, 0, 60));
+            logger.debug("TcpClient initChannel");
+
+            channel.pipeline().addLast(new IdleStateHandler(0, 0, 5));
             channel.pipeline().addLast(new ClientIdleHandler());
             channel.pipeline().addLast(new TcpCodecHandler());
             channel.pipeline().addLast(new ClientDispatcherHandler());

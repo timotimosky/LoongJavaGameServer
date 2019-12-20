@@ -17,7 +17,7 @@ public class ServerTest {
 
         var server0 = new TcpServer("127.0.0.1",10020);
         server0.start();
-       // Thread.sleep(Long.MAX_VALUE);
+        Thread.sleep(10);
 
         System.out.println("开始测试 startClient");
 

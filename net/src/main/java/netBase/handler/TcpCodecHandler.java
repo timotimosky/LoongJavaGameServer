@@ -27,7 +27,7 @@ public class TcpCodecHandler extends ByteToMessageCodec<ReceivablePacket> {
 
         //todo: 这里改成Unity的解码那样 避免这4位数据的BUG
         if (buffer.readableBytes() < 4) {
-            //log.warn("message short than four!");
+            logger.warn("message short than four!");
             return;
         }
 
@@ -37,22 +37,22 @@ public class TcpCodecHandler extends ByteToMessageCodec<ReceivablePacket> {
 
         if (buffer.readableBytes() < dataLength)
         {
-            //log.warn("message short than dataLength+4!  dataLength=="+dataLength);
+            logger.warn("message short than dataLength+4!  dataLength=="+dataLength);
             buffer.resetReaderIndex();
             return;
         }
 
         ByteBuf newbuffer = buffer.readBytes(dataLength);
 
-        short  module = buffer.getShort(4);
+        short module = buffer.getShort(4);
         short opcode =  buffer.getShort(6);
 
         ReceivablePacket pack  = new ReceivablePacket(module, opcode, newbuffer);
 
         //屏蔽心跳打印
-        // if (!(module==1 && opcode== 200)) {
-        // log.info("receive.."+ctx.getChannel().getId()+" length"+ dataLength+" module"+module+"  opcode"+opcode);
-        //}
+         //if (!(module==1 && opcode== 200)) {
+             logger.info("receive.."+ctx.channel().id()+" length"+ dataLength+" module"+module+"  opcode"+opcode);
+        // }
         out.add(pack);
     }
 
@@ -64,7 +64,8 @@ public class TcpCodecHandler extends ByteToMessageCodec<ReceivablePacket> {
         ByteBuf chnBuf= packetInfo.getBuffer();
 
         int datalength = chnBuf.readableBytes();
-        //log.infof("编码 datalength========================"+datalength);
+
+        logger.info("编码 datalength========================"+datalength);
 
         outbuf.writeInt(datalength+4);
         outbuf.writeBytes(chnBuf);

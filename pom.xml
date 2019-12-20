@@ -6,7 +6,7 @@
 
     <groupId>groupId</groupId>
     <artifactId>JavaGameServer</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <!-- 聚合，把下面的几个module一起打包，packaging必须为pom -->
     <packaging>pom</packaging>
